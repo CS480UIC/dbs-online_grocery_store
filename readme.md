@@ -6,6 +6,7 @@
 online_grocery_store
 # Author(s)
 Ali Ghani
+Aldo Diaz
 
 AUTHOR2
 # Database description
