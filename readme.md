@@ -5,7 +5,7 @@
 # Database
 DATABASE NAME
 # Author(s)
-AUTHOR1
+Ali Ghani
 AUTHOR2
 # Database description
 Write the database description and requirements here
