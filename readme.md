@@ -3,7 +3,7 @@
 1. [Author(s)](#author)
 1. [Database description](#description)
 # Database
-DATABASE NAME
+online_grocery_store
 # Author(s)
 Ali Ghani
 AUTHOR2
