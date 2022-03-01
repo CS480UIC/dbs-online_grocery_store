@@ -211,7 +211,7 @@ Relationship name: shopping_cart-contains-vegetable
 Cascade/Restrict: Cascade
 
 Relationship name: shopping_cart-contains-meat
-https://docs.google.com/spreadsheets/d/1t4w7G7vTdsEsj9DJN0tzhmjPmC5rn5e6YtCeRwrFN50/edit?usp=sharingCascade/Restrict: Cascade
+CaseCase/Restrict: Cascade
 
 Relationship name: user-receives-delivery_info
 Cascade/Restrict: Restrict 
