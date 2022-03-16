@@ -13,17 +13,33 @@ Kenneth Hwang
 Our project idea is an online grocery store where users can purchase different groceries. The database will store customer information such as their first and last name,password, email, address, credit card info, etc. about the customer. The database will also store information about the store inventory which will include the name of the product, the amount of the product remaining, the price of the product, etc. The database could be used for software applications that include grocery shopping. Our project is different because it will be more minimal in style and the database will be smaller in size than others so the look up times should be faster.
 
 # CRUD for Meat
-![Screen Shot 2022-03-16 at 12 00 00 AM](https://user-images.githubusercontent.com/61337965/158521279-608e408c-ba59-41c7-be28-f1e94bc6a5b4.png)
-![Screen Shot 2022-03-16 at 12 00 07 AM](https://user-images.githubusercontent.com/61337965/158521280-2b28ecc1-4b01-4c83-9384-f23e1f724906.png)
-![Screen Shot 2022-03-16 at 12 00 13 AM](https://user-images.githubusercontent.com/61337965/158521281-9a379203-b095-4a8d-a058-d9808f667b92.png)
+
 ![Screen Shot 2022-03-15 at 11 59 40 PM](https://user-images.githubusercontent.com/61337965/158521285-8ff3dded-f1d2-4308-b353-2a29e57ba4b3.png)
+
 ![Screen Shot 2022-03-15 at 11 59 46 PM](https://user-images.githubusercontent.com/61337965/158521286-14360b4b-d4c5-4bfd-b308-0ef7cb37afb8.png)
-![Screen Shot 2022-03-16 at 12 13 18 AM](https://user-images.githubusercontent.com/61337965/158521311-df77e772-b112-41ad-b8bc-fd35329770e8.png)
+
+![Screen Shot 2022-03-16 at 12 00 00 AM](https://user-images.githubusercontent.com/61337965/158521279-608e408c-ba59-41c7-be28-f1e94bc6a5b4.png)
+
+![Screen Shot 2022-03-16 at 12 00 07 AM](https://user-images.githubusercontent.com/61337965/158521280-2b28ecc1-4b01-4c83-9384-f23e1f724906.png)
+
+![Screen Shot 2022-03-16 at 12 00 13 AM](https://user-images.githubusercontent.com/61337965/158521281-9a379203-b095-4a8d-a058-d9808f667b92.png)
+
+# CRUD for History
 ![Screen Shot 2022-03-15 at 11 45 16 PM](https://user-images.githubusercontent.com/61337965/158521315-72307935-ab2f-45e8-9f93-9a6de5ea7afe.png)
+
 ![Screen Shot 2022-03-15 at 11 45 29 PM](https://user-images.githubusercontent.com/61337965/158521316-e8536424-6891-471c-8893-50af07929e57.png)
+
 ![Screen Shot 2022-03-15 at 11 45 43 PM](https://user-images.githubusercontent.com/61337965/158521317-7b7d6c59-6dec-4f60-8c6c-b4072cbc5e96.png)
+
+![Screen Shot 2022-03-16 at 12 13 18 AM](https://user-images.githubusercontent.com/61337965/158521311-df77e772-b112-41ad-b8bc-fd35329770e8.png)
+
 ![Screen Shot 2022-03-15 at 11 45 59 PM](https://user-images.githubusercontent.com/61337965/158521319-9690a03b-f9a2-4756-9776-8833f27f5411.png)
+
+
+# CRUD for Delivery Information
+
 ![Screen Shot 2022-03-16 at 12 11 08 AM](https://user-images.githubusercontent.com/61337965/158521338-c7aef89b-8b0b-4ff1-82c2-81f9b2aac084.png)
+
 ![Screen Shot 2022-03-16 at 12 12 51 AM](https://user-images.githubusercontent.com/61337965/158521341-f00da153-edfa-48d4-84fa-a5f05f925ffe.png)
 ![Screen Shot 2022-03-16 at 12 12 56 AM](https://user-images.githubusercontent.com/61337965/158521342-7b474cba-7449-42e4-9367-d65d3eebbfbd.png)
 ![Screen Shot 2022-03-16 at 12 13 01 AM](https://user-images.githubusercontent.com/61337965/158521344-833bc012-08ad-480b-bb63-807df560c0ff.png)
