@@ -45,8 +45,8 @@
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
 			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/meat/menu.jsp'/>" target="body">CRUD meat</a> |&nbsp;&nbsp;
-			<a href="<c:url value='history'/>" target="body">CRUD History</a> |&nbsp;&nbsp;
-			<a href="<c:url value='delivery_info'/>" target="body">CRUD Delivery Info</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/history/menu.jsp'/>" target="body">CRUD History</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/delivery_info/menu.jsp'/>" target="body">CRUD Delivery Info</a> |&nbsp;&nbsp;
 		</c:otherwise>
 	</c:choose>
 
