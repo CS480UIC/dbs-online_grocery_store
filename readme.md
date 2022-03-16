@@ -37,22 +37,36 @@ Our project idea is an online grocery store where users can purchase different g
 
 
 # CRUD for Delivery Information
-
 ![Screen Shot 2022-03-16 at 12 11 08 AM](https://user-images.githubusercontent.com/61337965/158521338-c7aef89b-8b0b-4ff1-82c2-81f9b2aac084.png)
 
 ![Screen Shot 2022-03-16 at 12 12 51 AM](https://user-images.githubusercontent.com/61337965/158521341-f00da153-edfa-48d4-84fa-a5f05f925ffe.png)
+
 ![Screen Shot 2022-03-16 at 12 12 56 AM](https://user-images.githubusercontent.com/61337965/158521342-7b474cba-7449-42e4-9367-d65d3eebbfbd.png)
+
 ![Screen Shot 2022-03-16 at 12 13 01 AM](https://user-images.githubusercontent.com/61337965/158521344-833bc012-08ad-480b-bb63-807df560c0ff.png)
+
 ![Screen Shot 2022-03-16 at 12 13 06 AM](https://user-images.githubusercontent.com/61337965/158521345-38f344c0-1a04-4091-b116-f7fe684f8f1f.png)
+
+# CRUD for Vegetable
 ![Screen Shot 2022-03-16 at 12 08 11 AM](https://user-images.githubusercontent.com/61337965/158521364-f89c9d39-e5ee-4b47-a89e-1ced8763475a.png)
+
 ![Screen Shot 2022-03-16 at 12 08 16 AM](https://user-images.githubusercontent.com/61337965/158521365-bd596f34-7f6b-4fca-aeb5-da7d6d2f162a.png)
+
 ![Screen Shot 2022-03-16 at 12 08 21 AM](https://user-images.githubusercontent.com/61337965/158521367-393c2e2e-09d2-4498-9ac4-b897103e505c.png)
+
 ![Screen Shot 2022-03-16 at 12 08 26 AM](https://user-images.githubusercontent.com/61337965/158521369-504709a5-2401-48ca-9b2b-eb2b1b2f3543.png)
+
 ![Screen Shot 2022-03-16 at 12 08 31 AM](https://user-images.githubusercontent.com/61337965/158521370-24eafe6a-d29f-44f0-9a5b-e0c67e5b66f9.png)
+
+# Crud for Meat
 ![image](https://user-images.githubusercontent.com/60899474/158527102-0bfb045a-f166-44b4-87be-9a844951e7dc.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527137-f85ce8fc-f0e3-4e98-a133-887404b1839e.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527168-63af47d3-835d-4bd6-a7e6-5041ed9198c0.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527188-38c427f6-4a05-4d30-b578-97a54d6b8e96.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527219-7518eedd-c601-4779-b029-5d2555a47db2.png)
 
 ![image](https://user-images.githubusercontent.com/60899474/158527265-ae121736-5c44-4827-bb44-00f77ca15f8f.png)
