@@ -20,4 +20,9 @@ Our project idea is an online grocery store where users can purchase different g
 ![Screen Shot 2022-03-16 at 12 00 07 AM](https://user-images.githubusercontent.com/61337965/158519979-ffbf334f-f964-4e55-be80-329659780e42.png)
 ![Screen Shot 2022-03-16 at 12 00 13 AM](https://user-images.githubusercontent.com/61337965/158519982-3c6abc25-af96-4909-a79b-984ceca487cd.png)
 ![Screen Shot 2022-03-15 at 11 59 40 PM](https://user-images.githubusercontent.com/61337965/158519983-36933949-20f5-479d-896d-2001cb373c1f.png)
-![Screen Shot 2022-03-15 at 11 59 46 PM](https://user-images.githubusercontent.com/61337965/158519985-7e9a23ec-4818-4495-8a75-5c9bfeab520e.png)
+![Screen Shot 2022-03-15 at 11 59 46 PM](https://user-images.githubusercontent.com/61337965/158519985-7e9a23ec-4818-4495-8a75-5c9bfeab520e.png)![Screen Shot 2022-03-16 at 12 08 11 AM](https://user-images.githubusercontent.com/61337965/158520791-092e15b0-e011-45bd-a202-87f7e33dc5ab.png)
+![Screen Shot 2022-03-16 at 12 08 16 AM](https://user-images.githubusercontent.com/61337965/158520794-d32f278f-093b-4fc7-8a1a-838baff9ca5e.png)
+![Screen Shot 2022-03-16 at 12 08 21 AM](https://user-images.githubusercontent.com/61337965/158520795-9cab5e49-f956-456a-bf52-325a5817a87b.png)
+![Screen Shot 2022-03-16 at 12 08 26 AM](https://user-images.githubusercontent.com/61337965/158520796-d8efa4ac-b1b6-4e46-92ea-4f743218d482.png)
+![Screen Shot 2022-03-16 at 12 08 31 AM](https://user-images.githubusercontent.com/61337965/158520797-6943d8bb-4a36-45b2-af55-668c7e83fbd6.png)
+
