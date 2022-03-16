@@ -11,6 +11,7 @@ Garima Chaudhary,
 Kenneth Hwang
 # Database description
 Our project idea is an online grocery store where users can purchase different groceries. The database will store customer information such as their first and last name,password, email, address, credit card info, etc. about the customer. The database will also store information about the store inventory which will include the name of the product, the amount of the product remaining, the price of the product, etc. The database could be used for software applications that include grocery shopping. Our project is different because it will be more minimal in style and the database will be smaller in size than others so the look up times should be faster.
+
 ![Screen Shot 2022-03-16 at 12 00 00 AM](https://user-images.githubusercontent.com/61337965/158521279-608e408c-ba59-41c7-be28-f1e94bc6a5b4.png)
 ![Screen Shot 2022-03-16 at 12 00 07 AM](https://user-images.githubusercontent.com/61337965/158521280-2b28ecc1-4b01-4c83-9384-f23e1f724906.png)
 ![Screen Shot 2022-03-16 at 12 00 13 AM](https://user-images.githubusercontent.com/61337965/158521281-9a379203-b095-4a8d-a058-d9808f667b92.png)
