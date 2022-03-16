@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Meat</title>
+    <title>Update Vegetable</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,13 +21,13 @@
   </head>
   
   <body>
-  <h1>Delete Meat</h1>
-<form action="<c:url value='/MeatServletDelete'/>" method="post">
+  <h1>Update Vegetable</h1>
+<form action="<c:url value='/VegetableServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Meat   :<input type="text" name="meat" value="${form.meat }"/>
-	<span style="color: red; font-weight: 900">${errors.meat }</span>
+	Update Vegetable   :<input type="text" name="vegetable" value="${form.vegetable }"/>
+	<span style="color: red; font-weight: 900">${errors.vegetable }</span>
 	<br/>
-	<input type="submit" value="Delete Meat"/>
+	<input type="submit" value="Update Vegetable"/>
 </form>
   </body>
 </html>

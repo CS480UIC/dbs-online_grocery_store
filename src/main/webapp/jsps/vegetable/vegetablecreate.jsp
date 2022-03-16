@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Meat Create</title>
+    <title>Create Vegetable</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Create Meat</h1>
+  <h1>Create Vegetable</h1>
 <form action="<c:url value='/Entity1ServletCreate'/>" method="post">
 	Product ID: <input type="text" name="product_ID" value="${form.product_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.product_ID }</span>
@@ -38,7 +38,7 @@
 	Vegetable Picture：<input type="image" name="veg_picture" value="${form.veg_picture }"/>
 	<span style="color: red; font-weight: 900">${errors.veg_picture }</span>
 	<br/>
-	<input type="submit" value="Create Meat"/>
+	<input type="submit" value="Create Vegetable"/>
 </form>
   </body>
 </html>

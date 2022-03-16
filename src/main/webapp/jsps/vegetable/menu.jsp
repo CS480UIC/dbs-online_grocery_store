@@ -22,12 +22,12 @@
   </head>
   
   <body>
-    <h1>CRUD operations for Meat </h1>
+    <h1>CRUD operations for Vegetable </h1>
     <br>
-	<a href="<c:url value='/jsps/meat/meatcreate.jsp'/>" target="_parent">Create Meat</a> |&nbsp; 
-	<a href="<c:url value='/jsps/meat/meatread.jsp'/>" target="_parent">Read Meat</a> |&nbsp;
-	<a href="<c:url value='/jsps/meat/meatupdate.jsp'/>" target="_parent">Update Meat</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/meat/meatdelete.jsp'/>" target="_parent">Delete Meat</a>	
+	<a href="<c:url value='/jsps/vegetable/vegetablecreate.jsp'/>" target="_parent">Create Vegetable</a> |&nbsp; 
+	<a href="<c:url value='/jsps/vegetable/vegetableread.jsp'/>" target="_parent">Read Vegetable</a> |&nbsp;
+	<a href="<c:url value='/jsps/vegetable/vegetableupdate.jsp'/>" target="_parent">Update Vegetable</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/vegetable/vegetabledelete.jsp'/>" target="_parent">Delete Vegetable</a>	
 	    
   </body>
 </html>
