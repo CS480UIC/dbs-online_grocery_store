@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read History Output</title>
+    <title>Read Entity Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">

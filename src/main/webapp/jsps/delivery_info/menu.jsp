@@ -5,8 +5,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <base href="">
     
-    <title>Read History Output</title>
+    <title>body</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,17 +22,12 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
-	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
-	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
-	<br/>
-</form>
-
-<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
-</body>
+    <h1>CRUD operations for Delivery Info </h1>
+    <br>
+	<a href="<c:url value='/jsps/delivery_info/delivery_info_create.jsp'/>" target="_parent">Create Delivery Info</a> |&nbsp; 
+	<a href="<c:url value='/jsps/delivery_info/delivery_info_read.jsp'/>" target="_parent">Read Delivery Info</a> |&nbsp;
+	<a href="<c:url value='/jsps/delivery_info/delivery_info_update.jsp'/>" target="_parent">Update Delivery Info</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/delivery_info/delivery_info_delete.jsp'/>" target="_parent">Delete Delivery Info</a>	
+	    
+  </body>
 </html>
