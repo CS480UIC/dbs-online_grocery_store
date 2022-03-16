@@ -48,6 +48,8 @@
 			<a href="<c:url value='/jsps/meat/menu.jsp'/>" target="body">CRUD meat</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/history/menu.jsp'/>" target="body">CRUD history</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/delivery_info/menu.jsp'/>" target="body">CRUD delivery info</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/fruit/menu.jsp'/>" target="body">CRUD Fruit</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/shopping_cart/menu.jsp'/>" target="body">CRUD Shopping Cart</a> |&nbsp;&nbsp;
 			
 		</c:otherwise>
 	</c:choose>
