@@ -31,7 +31,11 @@
   </head>
   
   <body>
+<<<<<<< HEAD
 <h1 style="text-align: center;">Yo</h1>
+=======
+<h1 style="text-align: center;">Yo</h1>
+>>>>>>> c6b716b4dcbd83c73602c66ca0e111223786cce8
 <div style="font-size: 10pt;">
 	<c:choose>
 		<c:when test="${empty sessionScope.session_user }">
