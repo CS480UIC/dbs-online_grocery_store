@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update History</h1>
 <form action="<c:url value='/HistoryServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update History   :<input type="text" name="history" value="${form.history }"/>

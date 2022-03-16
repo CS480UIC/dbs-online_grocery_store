@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Update</h1>
+  <h1>Update Delivery Info</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update Delivery Info   :<input type="text" name="delivery_info" value="${form.delivery_info }"/>

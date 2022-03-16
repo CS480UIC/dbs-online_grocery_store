@@ -21,7 +21,7 @@
   </head>
   
   <body>
-  <h1>Entity1 Create</h1>
+  <h1>Delivery Info Create</h1>
 <form action="<c:url value='/DeliveryInfoServletCreate'/>" method="post">
 	Driver ID:<input type="text" name="driver_id" value="${form.driver_id }"/>
 	<span style="color: red; font-weight: 900">${errors.driver_id }</span>
@@ -34,7 +34,9 @@
 	<br/>
 	Vehicle Type	：<input type="text" name="vehicle_type" value="${form.vehicle_type }"/>
 	<span style="color: red; font-weight: 900">${errors.vehicle_type }</span>
+	<br/>
 	<input type="submit" value="Create Delivery Info"/>
+	
 </form>
   </body>
 </html>
