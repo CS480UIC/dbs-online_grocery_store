@@ -58,7 +58,7 @@ Our project idea is an online grocery store where users can purchase different g
 
 ![Screen Shot 2022-03-16 at 12 08 31 AM](https://user-images.githubusercontent.com/61337965/158521370-24eafe6a-d29f-44f0-9a5b-e0c67e5b66f9.png)
 
-# Crud for Meat
+# CRUD for Fruit
 ![image](https://user-images.githubusercontent.com/60899474/158527102-0bfb045a-f166-44b4-87be-9a844951e7dc.png)
 
 ![image](https://user-images.githubusercontent.com/60899474/158527137-f85ce8fc-f0e3-4e98-a133-887404b1839e.png)
@@ -69,10 +69,16 @@ Our project idea is an online grocery store where users can purchase different g
 
 ![image](https://user-images.githubusercontent.com/60899474/158527219-7518eedd-c601-4779-b029-5d2555a47db2.png)
 
+# CRUD for Shopping Cart
+
 ![image](https://user-images.githubusercontent.com/60899474/158527265-ae121736-5c44-4827-bb44-00f77ca15f8f.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527291-4a32e997-3b76-4276-83f3-d47bb619c2fe.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527312-de567345-28d1-4651-b51a-278ba818210b.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527341-f11fd790-17de-434a-8cdc-1339ba2e8819.png)
+
 ![image](https://user-images.githubusercontent.com/60899474/158527370-bd9f8793-5154-4502-bc48-575e66c37b67.png)
 
 
