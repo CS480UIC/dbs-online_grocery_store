@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Update Entity1</title>
+    <title>Update Delivery Info</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -24,10 +24,10 @@
   <h1>Update</h1>
 <form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update User   :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Update Delivery Info   :<input type="text" name="delivery_info" value="${form.delivery_info }"/>
+	<span style="color: red; font-weight: 900">${errors.delivery_info }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	<input type="submit" value="Update Delivery Info"/>
 </form>
   </body>
 </html>

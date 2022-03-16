@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title>Delivery Info Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,17 +22,19 @@
   
   <body>
   <h1>Entity1 Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	User    :<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+<form action="<c:url value='/DeliveryInfoServletCreate'/>" method="post">
+	Driver ID:<input type="text" name="driver_id" value="${form.driver_id }"/>
+	<span style="color: red; font-weight: 900">${errors.driver_id }</span>
 	<br/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	User ID：<input type="password" name="user_id" value="${form.user_id }"/>
+	<span style="color: red; font-weight: 900">${errors.user_id }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Driver Proximity	：<input type="text" name="driver_proximity" value="${form.driver_proximity }"/>
+	<span style="color: red; font-weight: 900">${errors.driver_proximity }</span>
 	<br/>
-	<input type="submit" value="Create Entity1"/>
+	Vehicle Type	：<input type="text" name="vehicle_type" value="${form.vehicle_type }"/>
+	<span style="color: red; font-weight: 900">${errors.vehicle_type }</span>
+	<input type="submit" value="Create Delivery Info"/>
 </form>
   </body>
 </html>
