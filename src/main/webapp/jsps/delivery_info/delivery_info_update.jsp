@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read History Output</title>
+    <title>Update Entity1</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,17 +21,13 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
-<p style="color: red; font-weight: 900">${msg }</p>
-<form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+  <h1>Update</h1>
+<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+	<input type="hidden" name="method" value="search"/>
+	Update User   :<input type="text" name="username" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
-	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
-	<br/>
+	<input type="submit" value="Update Entity1"/>
 </form>
-
-<button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>
-</body>
+  </body>
 </html>
