@@ -86,5 +86,3 @@ Our project idea is an online grocery store where users can purchase different g
 
 
 
-
-
