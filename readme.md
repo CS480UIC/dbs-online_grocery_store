@@ -83,6 +83,24 @@ Our project idea is an online grocery store where users can purchase different g
 
 # CRUD for Credit Card
 ![image](<https://user-images.githubusercontent.com/97709402/158714127-18331293-1947-4e60-a8d5-009e61090718.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714379-a1801464-1ac2-4e46-b904-9897d515e1ec.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714482-a81ab55c-10ef-432c-8c81-b92c47941fb0.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714561-d65296d8-3d98-4bc4-8bc8-58e76737c4c4.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714626-c66e0a38-6b8e-43c6-adc7-a41a5c482b9b.png>)
+
+#CRUD for Person
+![image](<https://user-images.githubusercontent.com/97709402/158714715-50377581-f6e2-4686-91df-3aa036dab825.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714791-b5d557f3-dea3-4096-9a7e-c6fec6bd433a.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714900-f6f41b07-0f0f-429e-b2c2-d95d182d8aa3.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158714967-4710a74d-aa79-4ab6-be93-df1b921f6fb1.png>)
+![image](<https://user-images.githubusercontent.com/97709402/158715032-1b018bc8-d810-4c20-b902-696b72c20a10.png>)
+
+
+
+
+
+
+
 
 
 
