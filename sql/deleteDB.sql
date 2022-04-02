@@ -1,1 +1,10 @@
-
+DROP TABLE customer;
+DROP TABLE history;
+DROP TABLE credit_card;
+DROP TABLE delivery_info;
+DROP TABLE shopping_cart;
+DROP TABLE vegetable;
+DROP TABLE meat;
+DROP TABLE fruit;
+DROP TABLE user;
+DROP TABLE entity1;
