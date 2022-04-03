@@ -19,7 +19,7 @@ where count(product_name) = 1
 order by product_name asc;
 
 SELECT order_id from history
-where DATE(order_date) = '10/14/2021'
+where DATE(order_date) > '2021-10-14'
 order by order_id asc;
 
 SELECT product_name from fruit
