@@ -1,6 +1,6 @@
-Timestamp,Email Address,Product ID,Veg Name,Veg Price,Veg Quantity,Veg Picture
-10/14/2021 17:39:41,shopper@yahoo.com,123,goat,$1,1,
-10/19/2021 21:55:51,abc123@gmail.com,124,chicken,$2.00,1,
-10/15/2021 17:39:41,threere@gmail.com,125,beef,$1.00,1,
-10/16/2021 21:55:51,James@gmail.com,126,fish,$1.00,1,
-10/14/2021 17:39:41,Haleb@yahoo.com,127,turkey,$1.00,1,
+Product ID,Meat Name,Meat Price,Meat Quantity,Meat Picture
+9876,goat,1,1,hj
+8775,chicken,2,1,hj
+7875,beef,1,1,hj
+988889,fish,1,1,j
+898898,turkey,1,1,i

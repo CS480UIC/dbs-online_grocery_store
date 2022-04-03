@@ -1,6 +1,6 @@
-Timestamp,Product ID,Veg Name,Veg Price,Veg Quantity,Veg Picture
-12/14/2021 17:39:41,98,Brocolli,$1.99,3,
-11/19/2021 21:55:51,97,Asparagus,$1.50,2,
-2/14/2021 17:39:41,96,Artichoke,$0.30,1,
-10/19/2021 21:55:51,95,Spinach,$0.70,1,
-9/15/2021 17:30:41,94,Carrot,$2.00,4,
+Timestamp,Product ID,Veg Name,Veg Quantity,Veg Picture
+12/14/2021 17:39,9876,Brocolli,3,hello
+11/19/2021 21:55,8775,Asparagus,2,hi
+2/14/2021 17:39,7875,Artichoke,1,yi
+10/19/2021 21:55,988889,Spinach,1,yu
+9/15/2021 17:30,898898,Carrot,4,lol
