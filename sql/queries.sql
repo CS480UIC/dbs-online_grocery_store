@@ -25,3 +25,8 @@ order by order_id asc;
 SELECT product_name from fruit
 order by product_name asc
 having COUNT(fruit_quantity) = 1;
+
+SELECT product_name from shopping_cart
+join on fruit.product_id=shopping_cart.product_id
+where product_id =  9876
+order by product_name asc;
