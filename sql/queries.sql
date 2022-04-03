@@ -22,9 +22,18 @@ SELECT order_id from history
 where DATE(order_date) > '2021-10-14'
 order by order_id asc;
 
+SELECT REVERSE(first_name) from customer
+where last_name = "Pickle";
+
 SELECT product_name from fruit
-group by product_name
+order by product_name asc
 having COUNT(fruit_quantity) = 1;
+
+SELECT product_id from fruit
+where fruit_price > (SELECT AVG(fruit_price) from fruit);
+
+SELECT product_id from fruit
+where EXISTS (SELECT fruit_price from fruit where fruit_name = "Banana");
 
 SELECT product_name from shopping_cart
 join on fruit.product_id=shopping_cart.product_id
