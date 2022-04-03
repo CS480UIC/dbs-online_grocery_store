@@ -23,7 +23,7 @@ where DATE(order_date) > '2021-10-14'
 order by order_id asc;
 
 SELECT product_name from fruit
-order by product_name asc
+group by product_name
 having COUNT(fruit_quantity) = 1;
 
 SELECT product_name from shopping_cart
