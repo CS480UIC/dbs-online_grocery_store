@@ -22,7 +22,7 @@
   
   <body>
   <h1>Fruit Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/FruitServletCreate'/>" method="post">
 	Product ID    :<input type="text" name="productID" value="${form.productID }"/>
 	<span style="color: red; font-weight: 900">${errors.productID }</span>
 	<br/>

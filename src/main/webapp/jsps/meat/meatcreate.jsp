@@ -35,7 +35,7 @@
 	Product ID	：<input type="text" name="product_id" value="${form.product_id }"/>
 	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
 	<br/>
-	Meat Picture	：<input type="image" name="meat_picture" value="${form.meat_picture }"/>
+	Meat Picture	：<input type="text" name="meat_picture" value="${form.meat_picture }"/>
 	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
 	<br/>
 	<input type="submit" value="Create Meat"/>

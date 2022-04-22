@@ -82,6 +82,39 @@
     <url-pattern>/UserServletLogout</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>FruitServletCreate</display-name>
+    <servlet-name>FruitServletCreate</servlet-name>
+    <servlet-class>fruit.web.servlet.FruitServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FruitServletCreate</servlet-name>
+    <url-pattern>/FruitServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>MeatServletCreate</display-name>
+    <servlet-name>MeatServletCreate</servlet-name>
+    <servlet-class>meat.web.servlet.MeatServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MeatServletCreate</servlet-name>
+    <url-pattern>/MeatServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>VegetableServletCreate</display-name>
+    <servlet-name>VegetableServletCreate</servlet-name>
+    <servlet-class>vegetable.web.servlet.VegetableServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VegetableServletCreate</servlet-name>
+    <url-pattern>/VegetableServletCreate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

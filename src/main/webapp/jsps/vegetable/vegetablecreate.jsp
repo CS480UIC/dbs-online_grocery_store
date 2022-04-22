@@ -22,7 +22,7 @@
   
   <body>
   <h1>Create Vegetable</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/VegetableServletCreate'/>" method="post">
 	Product ID: <input type="text" name="product_ID" value="${form.product_ID }"/>
 	<span style="color: red; font-weight: 900">${errors.product_ID }</span>
 	<br/>
@@ -35,7 +35,7 @@
 	Vegetable Quantity：<input type="text" name="veg_quantity" value="${form.veg_quantity }"/>
 	<span style="color: red; font-weight: 900">${errors.veg_quantity }</span>
 	<br/>
-	Vegetable Picture：<input type="image" name="veg_picture" value="${form.veg_picture }"/>
+	Vegetable Picture：<input type="text" name="veg_picture" value="${form.veg_picture }"/>
 	<span style="color: red; font-weight: 900">${errors.veg_picture }</span>
 	<br/>
 	<input type="submit" value="Create Vegetable"/>
