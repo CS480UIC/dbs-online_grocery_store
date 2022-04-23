@@ -24,7 +24,7 @@
   <h1>Update History</h1>
 <form action="<c:url value='/HistoryServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update History   :<input type="text" name="history" value="${form.history }"/>
+	Update Order Id  :<input type="text" name="history" value="${form.history }"/>
 	<span style="color: red; font-weight: 900">${errors.history }</span>
 	<br/>
 	<input type="submit" value="Update History"/>

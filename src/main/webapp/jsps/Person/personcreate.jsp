@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Persin Create</title>
+    <title>Person Create</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,25 +21,28 @@
   </head>
   
   <body>
-  <h1>Person Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
-	User_Name   :<input type="text" name="username" value="${form.username }"/>
+  <h1>Create Person</h1>
+<form action="<c:url value='/PersonServletCreate'/>" method="post">
+	User Name   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
+	<br/>
+	Last Name：<input type="text" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
+	<br/>
+	Address：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
+	<br/>
+	Email：<input type="text" name="email" value="${form.email }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	First Name：<input type="password" name="first_name" value="${form.first_name }"/>
-	<span style="color: red; font-weight: 900">${errors.first_name }</span>
-	<br/>
-	Last Name：<input type="password" name="last_name" value="${form.last_name }"/>
-	<span style="color: red; font-weight: 900">${errors.last_name }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/>
-	Address：<input type="password" name="address" value="${form.address }"/>
-	<span style="color: red; font-weight: 900">${errors.address }</span>
+	Credit Card Number：<input type="text" name="credit_card_number" value="${form.password }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
 	<input type="submit" value="Create Person"/>
 </form>

@@ -26,7 +26,7 @@
 	Driver ID:<input type="text" name="driver_id" value="${form.driver_id }"/>
 	<span style="color: red; font-weight: 900">${errors.driver_id }</span>
 	<br/>
-	User ID：<input type="password" name="user_id" value="${form.user_id }"/>
+	User Name：<input type="text" name="user_id" value="${form.user_id }"/>
 	<span style="color: red; font-weight: 900">${errors.user_id }</span>
 	<br/>
 	Driver Proximity	：<input type="text" name="driver_proximity" value="${form.driver_proximity }"/>

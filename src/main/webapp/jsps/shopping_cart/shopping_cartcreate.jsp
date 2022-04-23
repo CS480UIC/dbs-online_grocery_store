@@ -22,7 +22,11 @@
   
   <body>
   <h1>Shopping Cart Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/ShoppingCartServletCreate'/>" method="post">
+	
+	User Name	：<input type="text" name="username" value="${form.username}"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
 	Product ID    :<input type="text" name="productID" value="${form.productID }"/>
 	<span style="color: red; font-weight: 900">${errors.productID }</span>
 	<br/>
@@ -31,9 +35,6 @@
 	<br/>
 	Quantity	：<input type="text" name="quantity" value="${form.quantity}"/>
 	<span style="color: red; font-weight: 900">${errors.quantity }</span>
-	<br/>
-	Username	：<input type="text" name="username" value="${form.username}"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
 	<input type="submit" value="Create Shopping Cart"/>
 </form>

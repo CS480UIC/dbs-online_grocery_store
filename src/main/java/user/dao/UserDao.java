@@ -37,7 +37,7 @@ public class UserDao {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
-		    String sql = "select * from user where username=?";
+		    String sql = "select * from customer where username=?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,username);
 		    ResultSet resultSet = preparestatement.executeQuery();
@@ -46,7 +46,11 @@ public class UserDao {
 		    	if(user_name.equals(username)){
 		    		user.setUsername(resultSet.getString("username"));
 		    		user.setPassword(resultSet.getString("password"));
+		    		user.setFirstName(resultSet.getString("first_name"));
+		    		user.setLastName(resultSet.getString("last_name"));
 		    		user.setEmail(resultSet.getString("email"));
+		    		user.setAddress(resultSet.getString("address"));
+		    		user.setCreditCardNumber(Integer.parseInt(resultSet.getString("credit_card_number")));
 		    		
 		    	}
 		    }
@@ -69,11 +73,17 @@ public class UserDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
 			
-			String sql = "insert into user values(?,?,?)";
+			String sql = "insert into customer(username,password, first_name, last_name, email, address, credit_card_number) values(?,?,?,?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,user.getUsername());
 		    preparestatement.setString(2,user.getPassword());
-		    preparestatement.setString(3,user.getEmail());
+		 
+		    preparestatement.setString(3,user.getFirstName());
+		    preparestatement.setString(4,user.getLastName());
+		    
+		    preparestatement.setString(5,user.getEmail());
+		    preparestatement.setString(6,user.getAddress());
+		    preparestatement.setInt(7,user.getCreditCardNumber());
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {
@@ -87,7 +97,7 @@ public class UserDao {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
-			String sql = "select * from user";
+			String sql = "select * from customer";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 			ResultSet resultSet = preparestatement.executeQuery();			
 			while(resultSet.next()){
@@ -95,6 +105,10 @@ public class UserDao {
 				user.setUsername(resultSet.getString("username"));
 	    		user.setPassword(resultSet.getString("password"));
 	    		user.setEmail(resultSet.getString("email"));
+	    		user.setFirstName(resultSet.getString("first_name"));
+	    		user.setAddress(resultSet.getString("address"));
+	    		user.setLastName(resultSet.getString("last_name"));
+	    		user.setCreditCardNumber(Integer.parseInt(resultSet.getString("credit_card_number")));
 	    		list.add(user);
 			 }
 			connect.close();

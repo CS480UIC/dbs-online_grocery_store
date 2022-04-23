@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Entity1 Create</title>
+    <title> Create History </title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,20 +21,22 @@
   </head>
   
   <body>
-  <h1>History Create</h1>
+  <h1>Create History </h1>
 <form action="<c:url value='/HistoryServletCreate'/>" method="post">
-	Items:<input type="text" name="items" value="${form.items }">
-	<span style="color: red; font-weight: 900">${errors.items }</span>
-	<br/>
+	
 	Order ID：<input type="text" name="order_id" value="${form.order_id }"/>
 	<span style="color: red; font-weight: 900">${errors.order_id }</span>
+	<br/>
+	User name：<input type="text" name="username" value="${form.username }"/>
+	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	Items:<input type="text" name="items" value="${form.items }">
+	<span style="color: red; font-weight: 900">${errors.items }</span>
 	<br/>
 	Order Date：<input type="text" name="order_date" value="${form.order_date }"/>
 	<span style="color: red; font-weight: 900">${errors.order_date }</span>
 	<br/>
-	Username：<input type="text" name="username" value="${form.username }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
-	<br/>
+
 	<input type="submit" value="Create History"/>
 </form>
   </body>

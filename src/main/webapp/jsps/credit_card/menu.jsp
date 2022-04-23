@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for Credit Card </h1>
     <br>
-	<a href="<c:url value='/jsps/entity1/entity1create.jsp'/>" target="_parent">Create Credit Card</a> |&nbsp; 
-	<a href="<c:url value='/jsps/entity1/entity1read.jsp'/>" target="_parent">Read Credit Card</a> |&nbsp;
-	<a href="<c:url value='/jsps/entity1/entity1update.jsp'/>" target="_parent">Update Credit Card</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/entity1/entity1delete.jsp'/>" target="_parent">Delete Credit Card</a>	
+	<a href="<c:url value='/jsps/credit_card/credit_cardcreate.jsp'/>" target="_parent">Create Credit Card</a> |&nbsp; 
+	<a href="<c:url value='/jsps/credit_card/credit_cardread.jsp'/>" target="_parent">Read Credit Card</a> |&nbsp;
+	<a href="<c:url value='/jsps/credit_card/credit_cardupdate.jsp'/>" target="_parent">Update Credit Card</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/credit_card/credit_carddelete.jsp'/>" target="_parent">Delete Credit Card</a>	
 	    
   </body>
 </html>

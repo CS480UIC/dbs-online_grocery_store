@@ -34,7 +34,7 @@
 	<br/>
 </form>
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/ShoppingCartServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
 	Product ID    :<input type="text" name="productID" value="${form.productID }"/>
 	<span style="color: red; font-weight: 900">${errors.productID }</span>

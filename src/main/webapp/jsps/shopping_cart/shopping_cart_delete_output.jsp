@@ -23,7 +23,7 @@
   <body>
   <h1>Delete Shopping Cart</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/ShoppingCartServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="username" value="${shopping_cart.username }"/>
 	Product ID    :<input type="text" name="productID" value="${shopping_cart.productID }" disabled/>

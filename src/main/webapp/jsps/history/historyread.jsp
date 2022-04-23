@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/HistoryServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	History    :<input type="text" name="history" value="${form.history }"/>
+	Read Order Id:<input type="text" name="history" value="${form.history }"/>
 	<span style="color: red; font-weight: 900">${errors.history }</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>

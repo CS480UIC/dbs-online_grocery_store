@@ -24,7 +24,7 @@
   <h1>Delete History</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete History:<input type="text" name="history" value="${form.history }"/>
+	Delete Order Id:<input type="text" name="history" value="${form.history }"/>
 	<span style="color: red; font-weight: 900">${errors.history }</span>
 	<br/>
 	<input type="submit" value="Delete History"/>

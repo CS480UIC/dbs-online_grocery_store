@@ -26,15 +26,28 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/UserServletRegister'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	User    :<input type="text" name="username" value="${form.username }"/>
+	User Name   :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<br/>
+	First Name：<input type="text" name="first_name" value="${form.first_name }"/>
+	<span style="color: red; font-weight: 900">${errors.first_name }</span>
+	<br/>
+	Last Name：<input type="text" name="last_name" value="${form.last_name }"/>
+	<span style="color: red; font-weight: 900">${errors.last_name }</span>
+	<br/>
+	Address：<input type="text" name="address" value="${form.address }"/>
+	<span style="color: red; font-weight: 900">${errors.address }</span>
+	<br/>
+	Email：<input type="text" name="email" value="${form.email }"/>
+	<span style="color: red; font-weight: 900">${errors.email }</span>
 	<br/>
 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Credit Card Number：<input type="text" name="credit_card_number" value="${form.password }"/>
+	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
+		
 	<input type="submit" value="Register"/>
 </form>
   </body>

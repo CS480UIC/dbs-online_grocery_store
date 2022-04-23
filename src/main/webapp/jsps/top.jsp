@@ -43,13 +43,14 @@
 			Hello：${sessionScope.session_user.username };
 			<a href="<c:url value='/jsps/user/queries.jsp'/>" target="body">Query Result</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/UserServletLogout'/>" target="_parent">Logout</a> |&nbsp; 
-			<a href="<c:url value='/jsps/entity1/menu.jsp'/>" target="body">CRUD entity 1</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/vegetable/menu.jsp'/>" target="body">CRUD vegetable</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/meat/menu.jsp'/>" target="body">CRUD meat</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/history/menu.jsp'/>" target="body">CRUD history</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/credit_card/menu.jsp'/>" target="body">CRUD Credit Card</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/vegetable/menu.jsp'/>" target="body">CRUD Vegetable</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/meat/menu.jsp'/>" target="body">CRUD Meat</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/history/menu.jsp'/>" target="body">CRUD History</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/delivery_info/menu.jsp'/>" target="body">CRUD delivery info</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/fruit/menu.jsp'/>" target="body">CRUD Fruit</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/shopping_cart/menu.jsp'/>" target="body">CRUD Shopping Cart</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/Person/menu.jsp'/>" target="body">CRUD Person</a> |&nbsp;&nbsp;
 			
 		</c:otherwise>
 	</c:choose>

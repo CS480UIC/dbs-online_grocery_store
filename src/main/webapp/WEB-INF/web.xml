@@ -115,6 +115,61 @@
     <url-pattern>/VegetableServletCreate</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>PersonServletCreate</display-name>
+    <servlet-name>PersonServletCreate</servlet-name>
+    <servlet-class>person.web.servlet.PersonServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonServletCreate</servlet-name>
+    <url-pattern>/PersonServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CreditCardServletCreate</display-name>
+    <servlet-name>CreditCardServletCreate</servlet-name>
+    <servlet-class>credit_card.web.servlet.CreditCardServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreditCardServletCreate</servlet-name>
+    <url-pattern>/CreditCardServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeliveryInfoServletCreate</display-name>
+    <servlet-name>DeliveryInfoServletCreate</servlet-name>
+    <servlet-class>delivery_info.web.servlet.DeliveryInfoServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeliveryInfoServletCreate</servlet-name>
+    <url-pattern>/DeliveryInfoServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShoppingCartServletCreate</display-name>
+    <servlet-name>ShoppingCartServletCreate</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletCreate</servlet-name>
+    <url-pattern>/ShoppingCartServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HistoryServletCreate</display-name>
+    <servlet-name>HistoryServletCreate</servlet-name>
+    <servlet-class>history.web.servlet.HistoryServletCreate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HistoryServletCreate</servlet-name>
+    <url-pattern>/HistoryServletCreate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

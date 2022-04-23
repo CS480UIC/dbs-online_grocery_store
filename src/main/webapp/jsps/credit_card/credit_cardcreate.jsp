@@ -22,11 +22,11 @@
   
   <body>
   <h1>Credit_card Create</h1>
-<form action="<c:url value='/Entity1ServletCreate'/>" method="post">
+<form action="<c:url value='/CreditCardServletCreate'/>" method="post">
 	Credit Card Number    :<input type="text" name="credit_card_number" value="${form.credit_card_number }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	CCV：<input type="text" name="ccv" value="${form.ccv }"/>
+	CVV：<input type="text" name="ccv" value="${form.ccv }"/>
 	<span style="color: red; font-weight: 900">${errors.ccv }</span>
 	<br/>
 	Expiration Date	：<input type="text" name="expiration_date" value="${form.expiration_date }"/>
