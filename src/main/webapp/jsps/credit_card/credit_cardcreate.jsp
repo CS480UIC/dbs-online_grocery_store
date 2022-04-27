@@ -23,11 +23,12 @@
   <body>
   <h1>Credit_card Create</h1>
 <form action="<c:url value='/CreditCardServletCreate'/>" method="post">
+
 	Credit Card Number    :<input type="text" name="credit_card_number" value="${form.credit_card_number }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	CVV：<input type="text" name="ccv" value="${form.ccv }"/>
-	<span style="color: red; font-weight: 900">${errors.ccv }</span>
+	CVV：<input type="text" name="cvv" value="${form.cvv }"/>
+	<span style="color: red; font-weight: 900">${errors.cvv }</span>
 	<br/>
 	Expiration Date	：<input type="text" name="expiration_date" value="${form.expiration_date }"/>
 	<span style="color: red; font-weight: 900">${errors.expiration_date }</span>
@@ -35,6 +36,7 @@
 	 credit card owner name 	：<input type="text" name="credit_card_owner_name" value="${form.credit_card_owner_name }"/>
 	<span style="color: red; font-weight: 900">${errors.credit_card_owner_name }</span>
 	<br/>
+	
 	<input type="submit" value="Credit Card"/>
 </form>
   </body>

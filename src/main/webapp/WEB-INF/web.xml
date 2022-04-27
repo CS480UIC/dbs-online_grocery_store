@@ -95,6 +95,17 @@
   
   <servlet>
     <description></description>
+    <display-name>FruitServletRead</display-name>
+    <servlet-name>FruitServletRead</servlet-name>
+    <servlet-class>fruit.web.servlet.FruitServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FruitServletRead</servlet-name>
+    <url-pattern>/FruitServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>MeatServletCreate</display-name>
     <servlet-name>MeatServletCreate</servlet-name>
     <servlet-class>meat.web.servlet.MeatServletCreate</servlet-class>
@@ -102,6 +113,17 @@
   <servlet-mapping>
     <servlet-name>MeatServletCreate</servlet-name>
     <url-pattern>/MeatServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>MeatServletRead</display-name>
+    <servlet-name>MeatServletRead</servlet-name>
+    <servlet-class>meat.web.servlet.MeatServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MeatServletRead</servlet-name>
+    <url-pattern>/MeatServletRead</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -117,6 +139,17 @@
   
   <servlet>
     <description></description>
+    <display-name>VegetableServletRead</display-name>
+    <servlet-name>VegetableServletRead</servlet-name>
+    <servlet-class>vegetable.web.servlet.VegetableServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VegetableServletRead</servlet-name>
+    <url-pattern>/VegetableServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>PersonServletCreate</display-name>
     <servlet-name>PersonServletCreate</servlet-name>
     <servlet-class>person.web.servlet.PersonServletCreate</servlet-class>
@@ -124,6 +157,17 @@
   <servlet-mapping>
     <servlet-name>PersonServletCreate</servlet-name>
     <url-pattern>/PersonServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>PersonServletRead</display-name>
+    <servlet-name>PersonServletRead</servlet-name>
+    <servlet-class>person.web.servlet.PersonServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonServletRead</servlet-name>
+    <url-pattern>/PersonServletRead</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -139,6 +183,17 @@
   
   <servlet>
     <description></description>
+    <display-name>CreditCardServletRead</display-name>
+    <servlet-name>CreditCardServletRead</servlet-name>
+    <servlet-class>credit_card.web.servlet.CreditCardServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreditCardServletRead</servlet-name>
+    <url-pattern>/CreditCardServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>DeliveryInfoServletCreate</display-name>
     <servlet-name>DeliveryInfoServletCreate</servlet-name>
     <servlet-class>delivery_info.web.servlet.DeliveryInfoServletCreate</servlet-class>
@@ -146,6 +201,17 @@
   <servlet-mapping>
     <servlet-name>DeliveryInfoServletCreate</servlet-name>
     <url-pattern>/DeliveryInfoServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DeliveryInfoServletRead</display-name>
+    <servlet-name>DeliveryInfoServletRead</servlet-name>
+    <servlet-class>delivery_info.web.servlet.DeliveryInfoServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeliveryInfoServletRead</servlet-name>
+    <url-pattern>/DeliveryInfoServletRead</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -161,6 +227,17 @@
   
   <servlet>
     <description></description>
+    <display-name>ShoppingCartServletRead</display-name>
+    <servlet-name>ShoppingCartServletRead</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletRead</servlet-name>
+    <url-pattern>/ShoppingCartServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>HistoryServletCreate</display-name>
     <servlet-name>HistoryServletCreate</servlet-name>
     <servlet-class>history.web.servlet.HistoryServletCreate</servlet-class>
@@ -168,6 +245,17 @@
   <servlet-mapping>
     <servlet-name>HistoryServletCreate</servlet-name>
     <url-pattern>/HistoryServletCreate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HistoryServletRead</display-name>
+    <servlet-name>HistoryServletRead</servlet-name>
+    <servlet-class>history.web.servlet.HistoryServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HistoryServletRead</servlet-name>
+    <url-pattern>/HistoryServletRead</url-pattern>
   </servlet-mapping>
   
   

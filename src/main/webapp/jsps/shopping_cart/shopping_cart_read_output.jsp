@@ -24,14 +24,16 @@
   <h1>Read Shopping Cart Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="productID" value="${form.productID }" disabled/>
+
+	User Name ：<input type="text" name="username" value="${shopping_cart.username}" disabled/>
 	<br/>
-	Product Price	：<input type="text" name="product_price" value="${form.product_price}" disabled/>
+	Product ID :<input type="text" name="productID" value="${shopping_cart.productID }" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${form.quantity}" disabled/>
+	Product Price ：<input type="text" name="product_price" value="${shopping_cart.product_price}" disabled/>
 	<br/>
-	Username	：<input type="text" name="username" value="${form.username}" disabled/>
+	Quantity ：<input type="text" name="quantity" value="${shopping_cart.quantity}" disabled/>
 	<br/>
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>

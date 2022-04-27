@@ -24,15 +24,15 @@
   <h1>Read Fruit Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="productID" value="${form.productID }" disabled/>
+	Product ID    :<input type="text" name="productID" value="${fruit.productID }" disabled/>
 	<br/>
-	Fruit Name：<input type="text" name="fruit_name" value="${form.fruit_name }" disabled />
+	Fruit Name：<input type="text" name="fruit_name" value="${fruit.fruit_name }" disabled />
 	<br/>
-	Fruit Price	：<input type="text" name="fruit_price" value="${form.fruit_price}" disabled/>
+	Fruit Price	：<input type="text" name="fruit_price" value="${fruit.fruit_price}" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${form.quantity}" disabled/>
+	Quantity	：<input type="text" name="quantity" value="${fruit.quantity}" disabled/>
 	<br/>
-	Fruit Picture	：<input type="text" name="fruit_picture" value="${form.fruit_picture}" disabled/>
+	Fruit Picture	：<input type="text" name="fruit_picture" value="${fruit.fruit_picture}" disabled/>
 	<br/>
 </form>
 

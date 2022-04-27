@@ -30,7 +30,7 @@
 	User name：<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username }</span>
 	<br/>
-	Items:<input type="text" name="items" value="${form.items }">
+	Items:<input type="text" name="items" value="${form.items }"/>
 	<span style="color: red; font-weight: 900">${errors.items }</span>
 	<br/>
 	Order Date：<input type="text" name="order_date" value="${form.order_date }"/>

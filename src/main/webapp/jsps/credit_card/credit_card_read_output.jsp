@@ -21,15 +21,19 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Credit Card Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	
+	Credit Card Number :<input type="text" name="credit_card_number" value="${credit_card.credit_card_number }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	CVV：<input type="text" name="cvv" value="${credit_card.cvv }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Expiration Date	：<input type="text" name="expiration_date" value="${credit_card.expiration_date }" disabled/>
 	<br/>
+	 Credit Card Owner Name ：<input type="text" name="credit_card_owner_name" value="${credit_card.credit_card_owner_name }" disabled/>
+	<br/>
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>

@@ -21,15 +21,19 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read History Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+	
+	Order ID：<input type="text" name="order_id" value="${history.order_id }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	User name：<input type="text" name="username" value="${history.username }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Items:<input type="text" name="items" value="${history.items }" disabled/>
 	<br/>
+	Order Date：<input type="text" name="order_date" value="${history.order_date }" disabled/>
+	<br/>
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>

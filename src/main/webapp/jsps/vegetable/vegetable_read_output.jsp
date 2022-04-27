@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Read Entity Output</title>
+    <title>Read Vegetable Output</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,15 +21,21 @@
   </head>
   
   <body>
-  <h1>Read Entity Output</h1>
+  <h1>Read Vegetable Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+
+	Product ID: <input type="text" name="product_ID" value="${vegetable.product_ID }" disabled/>
 	<br/>
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Vegetable Name：<input type="text" name="veg_name" value="${vegetable.veg_name }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Vegetable Price：<input type="text" name="veg_price" value="${vegetable.veg_price }" disabled/>
 	<br/>
+	Vegetable Quantity：<input type="text" name="veg_quantity" value="${vegetable.veg_quantity }" disabled/>
+	<br/>
+	Vegetable Picture：<input type="text" name="veg_picture" value="${vegetable.veg_picture }" disabled/>
+	<br/>
+	
 </form>
 
 <button onclick="window.location.href='<c:url value='/jsps/main.jsp'/>'">Continue</button>

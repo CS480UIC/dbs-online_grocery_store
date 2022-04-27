@@ -24,7 +24,7 @@
   <h1>Delete Credit Card</h1>
 <form action="<c:url value='/Entity1ServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Credit Card   :<input type="text" name="credit_card" value="${form.credit_card }"/>
+	Delete Credit Card :<input type="text" name="credit_card" value="${form.credit_card }"/>
 	<span style="color: red; font-weight: 900">${errors.credit_card }</span>
 	<br/>
 	<input type="submit" value="Delete Credit Card"/>

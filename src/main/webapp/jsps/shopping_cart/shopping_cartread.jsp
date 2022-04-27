@@ -25,15 +25,9 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/ShoppingCartServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	Username    :<input type="text" name="username" value="${form.username }"/>
+	Username :<input type="text" name="username" value="${form.username }"/>
 	<span style="color: red; font-weight: 900">${errors.username}</span>
 	<br/>
-<%-- 	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
-	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
-	<br/> --%>
 	<input type="submit" value="Read Shopping Cart"/>
 </form>
   </body>
