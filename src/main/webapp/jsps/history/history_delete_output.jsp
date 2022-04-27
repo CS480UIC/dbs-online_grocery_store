@@ -21,19 +21,19 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete History</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/HistoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	Items    :<input type="text" name="itms" value="${entity1.items }" disabled/>
+		<input type="hidden" name="username" value="${history.username }"/>
+
+	Order ID：<input type="text" name="order_id" value="${history.order_id }" disabled/>
+	<br/>	
+	Items    :<input type="text" name="items" value="${history.items }" disabled/>
 	<br/>
-	
-	Order ID：<input type="text" name="order_id" value="${entity1.order_id }" disabled/>
+	Order Date	：<input type="text" name="order_date" value="${history.order_date }" disabled/>
 	<br/>
-	Order Date	：<input type="text" name="order_date" value="${entity1.order_date }" disabled/>
-	<br/>
-	Username	：<input type="text" name="username" value="${entity1.username }" disabled/>
+	Username	：<input type="text" name="username" value="${history.username }" disabled/>
 	<br/>
 	<input type="submit" value="Delete History"/>
 </form>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity1</title>
+    <title>Delete History</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete History</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/HistoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Order Id:<input type="text" name="history" value="${form.history }"/>
-	<span style="color: red; font-weight: 900">${errors.history }</span>
+	Delete Order Id:<input type="text" name="order_id" value="${form.order_id }"/>
+	<span style="color: red; font-weight: 900">${errors.order_id }</span>
 	<br/>
 	<input type="submit" value="Delete History"/>
 </form>

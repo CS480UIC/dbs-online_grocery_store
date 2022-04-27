@@ -21,10 +21,11 @@
   </head>
   
   <body>
-  <h1>Delete Delivery Info</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
-	<input type="hidden" name="method" value="search"/>
-	Delete Delivery Info   :<input type="text" name="delivery_info" value="${form.delivery_info }"/>
+  <h1>Delete Delivery Info  </h1>
+<form action="<c:url value='/DeliveryInfoServletDelete'/>" method="post">
+	//<input type="hidden" name="method" value="search"/>
+	Enter Driver ID:  <input type="text" name="delivery_info" value="${form.delivery_info }"/>
+	<br/>
 	<span style="color: red; font-weight: 900">${errors.delivery_info }</span>
 	<br/>
 	<input type="submit" value="Delete Delivery Info"/>

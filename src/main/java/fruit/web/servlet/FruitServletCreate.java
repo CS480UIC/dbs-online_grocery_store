@@ -41,7 +41,7 @@ public class FruitServletCreate extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		FruitService entity1service = new FruitService();
+		FruitService fruitservice = new FruitService();
 		Map<String,String[]> paramMap = request.getParameterMap();
 		Fruit form = new Fruit();
 		List<String> info = new ArrayList<String>();
@@ -58,7 +58,7 @@ public class FruitServletCreate extends HttpServlet {
 		form.setFruitPicture(info.get(4));
 		
 		try {
-			entity1service.create(form);
+			fruitservice.create(form);
 			response.sendRedirect( request.getContextPath() + "/jsps/main.jsp");
 			
 		} catch (ClassNotFoundException | FruitException e) {

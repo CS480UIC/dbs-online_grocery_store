@@ -24,7 +24,9 @@
   <h1>Read Fruit Output</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="productID" value="${fruit.productID }" disabled/>
+	
+
+	Product ID    :<input type="text" name="product_id" value="${fruit.product_id }" disabled/>
 	<br/>
 	Fruit Name：<input type="text" name="fruit_name" value="${fruit.fruit_name }" disabled />
 	<br/>

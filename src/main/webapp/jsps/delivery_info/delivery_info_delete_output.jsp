@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Delivery Info</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,20 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Delivery Info</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/DeliveryInfoServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+
+	Driver ID:<input type="text" name="driver_id" value="${delivery_info.driver_id }" disabled/>
+	<br/>
+	User Name：<input type="text" name="user_id" value="${delivery_info.user_id }" disabled/>
+	<br/>
+	Driver Proximity	：<input type="text" name="driver_proximity" value="${delivery_info.driver_proximity }" disabled/>
+	<br/>
+	Vehicle Type	：<input type="text" name="vehicle_type" value="${delivery_info.vehicle_type }" disabled/>
 	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
-	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
-	<br/>
-	<input type="submit" value="Delete Entity1"/>
 </form>
 
 </body>

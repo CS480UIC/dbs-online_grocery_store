@@ -63,8 +63,4 @@ public class DeliveryInfo {
 		this.driver_proximity = driver_proximity;
 	}
 	
-	
-	
-	
-
 }

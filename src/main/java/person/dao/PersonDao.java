@@ -21,12 +21,12 @@ public class PersonDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "online_grocery_store";  //TODO change user
+	private String MySQL_user = "store";  //TODO change user
 	
 	/**
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "databased";  //TODO change password
+	private String MySQL_password = "password";  //TODO change password
 	
 	/**
 	 * get the Search result with Username 

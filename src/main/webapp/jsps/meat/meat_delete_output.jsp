@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Meat</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,27 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Meat</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/MeatServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		<input type="hidden" name="product_id" value="${meat.product_id }" disabled/>
+	Meat Name :<input type="text" name="meat_name" value="${form.meat_name }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.meat_name }</span>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Meat Price：<input type="text" name="meat_price" value="${form.meat_price }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.meat_price }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Meat Weight	：<input type="text" name="meat_weight" value="${form.meat_weight }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Product ID	：<input type="text" name="product_id" value="${form.product_id }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
+	<br/>
+	Meat Picture	：<input type="text" name="meat_picture" value="${form.meat_picture }" disabled/>
+	<span style="color: red; font-weight: 900">${errors.meat_picture }</span>
+	<br/>
+	<input type="submit" value="Delete Meat"/>
 </form>
 
 </body>
