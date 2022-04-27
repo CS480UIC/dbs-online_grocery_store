@@ -53,7 +53,7 @@ public class VegetableServletRead extends HttpServlet {
 		}
 		
 		if(vegetable.getProduct_id()!=null){
-					System.out.println(vegetable);
+//					System.out.println(vegetable);
 					request.setAttribute("vegetable", vegetable);
 					request.getRequestDispatcher("/jsps/vegetable/vegetable_read_output.jsp").forward(request, response);
 			}

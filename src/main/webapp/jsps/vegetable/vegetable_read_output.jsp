@@ -25,15 +25,15 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 
-	Product ID: <input type="text" name="product_ID" value="${vegetable.product_ID }" disabled/>
+	Product ID: <input type="text" name="product_id" value="${vegetable.product_id }" disabled/>
 	<br/>
-	Vegetable Name：<input type="text" name="veg_name" value="${vegetable.veg_name }" disabled/>
+	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.veg_name }" disabled/>
 	<br/>
-	Vegetable Price：<input type="text" name="veg_price" value="${vegetable.veg_price }" disabled/>
+	Vegetable price: <input type="text" name="veg_price" value="${vegetable.veg_price }" disabled/>
 	<br/>
-	Vegetable Quantity：<input type="text" name="veg_quantity" value="${vegetable.veg_quantity }" disabled/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.veg_quantity }" disabled/>
 	<br/>
-	Vegetable Picture：<input type="text" name="veg_picture" value="${vegetable.veg_picture }" disabled/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.veg_picture }" disabled/>
 	<br/>
 	
 </form>

@@ -23,8 +23,8 @@
   <body>
   <h1>Create Vegetable</h1>
 <form action="<c:url value='/VegetableServletCreate'/>" method="post">
-	Product ID: <input type="text" name="product_ID" value="${form.product_ID }"/>
-	<span style="color: red; font-weight: 900">${errors.product_ID }</span>
+	Product ID: <input type="text" name="product_id" value="${form.product_id }"/>
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
 	Vegetable Name：<input type="text" name="veg_name" value="${form.veg_name }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
