@@ -26,7 +26,7 @@
 <form action="<c:url value='/VegetableServletRead'/>" method="post">
 
 	<input type="hidden" name="method" value="regist"/>
-	Product ID :<input type="text" name="product_id" value="${form.product_id}"/>
+	Product ID: <input type="text" name="product_id" value="${form.product_id}"/>
 	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
 

@@ -55,11 +55,11 @@ public class PersonServletRead extends HttpServlet {
 		if(person.getUsername()!=null){
 					System.out.println(person);
 					request.setAttribute("person", person);
-					request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
+					request.getRequestDispatcher("/jsps/Person/person_read_output.jsp").forward(request, response);
 			}
 			else{
 			request.setAttribute("msg", "Person not found");
-			request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsps/Person/person_read_output.jsp").forward(request, response);
 		}
 	}
 }

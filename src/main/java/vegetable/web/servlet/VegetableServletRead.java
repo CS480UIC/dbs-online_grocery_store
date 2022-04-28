@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fruit.dao.FruitDao;
-import fruit.domain.Fruit;
 import vegetable.dao.VegetableDao;
 import vegetable.domain.Vegetable;
 
