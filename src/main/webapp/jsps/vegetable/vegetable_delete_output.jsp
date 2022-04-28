@@ -23,17 +23,19 @@
   <body>
   <h1>Delete Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/VegetableServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
+		Product ID: <input type="text" name="product_id" value="${vegetable.product_id }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.getVegName() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	Vegetable price: <input type="text" name="veg_price" value="${vegetable.getVegPrice() }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.getVegQuantity() }" disabled/>
+	<br/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.getVegPicture() }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Vegetable"/>
 </form>
 
 </body>

@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Credit Card</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,19 +21,20 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Credit Card</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/CreditCardServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
-	User    :<input type="text" name="username" value="${entity1.username }" disabled/>
-	<br/>
 	
-	Password：<input type="text" name="password" value="${entity1.password }" disabled/>
+	Credit Card Number :<input type="text" name="credit_card_number" value="${credit_card.getCreditcardnumber() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${entity1.email }" disabled/>
+	CVV：<input type="text" name="cvv" value="${credit_card.getCvv() }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	Expiration Date	：<input type="text" name="expiration_date" value="${credit_card.getExpirationdate() }" disabled/>
+	<br/>
+	 Credit Card Owner Name ：<input type="text" name="credit_card_owner_name" value="${credit_card.getCreditcardname() }" disabled/>
+	<br/>
+	<input type="submit" value="Delete Credit Card"/>
 </form>
 
 </body>

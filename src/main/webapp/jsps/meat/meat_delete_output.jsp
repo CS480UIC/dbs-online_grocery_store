@@ -25,22 +25,18 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/MeatServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="product_id" value="${meat.product_id }" disabled/>
-	Meat Name :<input type="text" name="meat_name" value="${form.meat_name }" disabled/>
-	<span style="color: red; font-weight: 900">${errors.meat_name }</span>
+		<input type="hidden" name="product_id" value="${meat.product_id }" />
+	Meat Name :<input type="text" name="meat_name" value="${meat.getMeatName() }" disabled/>
 	<br/>
-	Meat Price：<input type="text" name="meat_price" value="${form.meat_price }" disabled/>
-	<span style="color: red; font-weight: 900">${errors.meat_price }</span>
+	Meat Price ：<input type="text" name="meat_price" value="${meat.getMeatPrice() }" disabled/>
 	<br/>
-	Meat Weight	：<input type="text" name="meat_weight" value="${form.meat_weight }" disabled/>
-	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
+	Meat Quantity	：<input type="text" name="meat_quantity" value="${meat.getMeatQuantity() }" disabled/>
 	<br/>
-	Product ID	：<input type="text" name="product_id" value="${form.product_id }" disabled/>
-	<span style="color: red; font-weight: 900">${errors.product_id }</span>
+	Product ID ：<input type="text" name="product_id" value="${meat.getProduct_id() }" disabled/>
 	<br/>
-	Meat Picture	：<input type="text" name="meat_picture" value="${form.meat_picture }" disabled/>
-	<span style="color: red; font-weight: 900">${errors.meat_picture }</span>
+	Meat Picture ：<input type="text" name="meat_picture" value="${meat.getMeatPicture() }" disabled/>
 	<br/>
+	
 	<input type="submit" value="Delete Meat"/>
 </form>
 

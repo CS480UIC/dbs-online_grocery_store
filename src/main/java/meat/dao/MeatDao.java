@@ -120,6 +120,7 @@ public class MeatDao {
 	 * @throws IllegalAccessException
 	 */
 	public void delete(String product_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		System.out.println(product_id_p);
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);

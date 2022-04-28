@@ -170,6 +170,19 @@
     <url-pattern>/VegetableServletRead</url-pattern>
   </servlet-mapping>
   
+   
+  <servlet>
+    <description></description>
+    <display-name>VegetableServletDelete</display-name>
+    <servlet-name>VegetableServletDelete</servlet-name>
+    <servlet-class>vegetable.web.servlet.VegetableServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VegetableServletDelete</servlet-name>
+    <url-pattern>/VegetableServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  
   <servlet>
     <description></description>
     <display-name>PersonServletCreate</display-name>
@@ -202,6 +215,18 @@
     <servlet-name>CreditCardServletCreate</servlet-name>
     <url-pattern>/CreditCardServletCreate</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>CreditCardServletDelete</display-name>
+    <servlet-name>CreditCardServletDelete</servlet-name>
+    <servlet-class>credit_card.web.servlet.CreditCardServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreditCardServletDelete</servlet-name>
+    <url-pattern>/CreditCardServletDelete</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>

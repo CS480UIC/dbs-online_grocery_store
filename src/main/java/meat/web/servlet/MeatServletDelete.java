@@ -1,6 +1,8 @@
 package meat.web.servlet;
 
 import java.io.IOException;
+import java.util.Map;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -40,6 +42,9 @@ public class MeatServletDelete extends HttpServlet {
 		String method = request.getParameter("method");
 		MeatDao meatDao = new MeatDao();
 		Meat meat = null;
+
+		
+		
 		if(method.equals("search"))
 		{
 			try {
@@ -64,6 +69,7 @@ public class MeatServletDelete extends HttpServlet {
 		}
 		else if(method.equals("delete"))
 		{	
+			
 			try {
 				meatDao.delete(request.getParameter("product_id"));
 			} catch (ClassNotFoundException e1) {
