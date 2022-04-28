@@ -29,8 +29,8 @@
 	Meat Price：<input type="text" name="meat_price" value="${form.meat_price }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Meat Weight	：<input type="text" name="meat_weight" value="${form.meat_weight }"/>
-	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
+	Meat Quantity	：<input type="text" name="meat_quantity" value="${form.meat_quantity }"/>
+	<span style="color: red; font-weight: 900">${errors.meat_quantity }</span>
 	<br/>
 	Product ID	：<input type="text" name="product_id" value="${form.product_id }"/>
 	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>

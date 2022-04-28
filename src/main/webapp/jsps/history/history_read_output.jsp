@@ -25,13 +25,13 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	
-	Order ID：<input type="text" name="order_id" value="${history.order_id }" disabled/>
+	Order ID：<input type="text" name="order_id" value="${history.getOrder_id() }" disabled/>
 	<br/>
-	User name：<input type="text" name="username" value="${history.username }" disabled/>
+	User name：<input type="text" name="username" value="${history.getUsername() }" disabled/>
 	<br/>
-	Items:<input type="text" name="items" value="${history.items }" disabled/>
+	Items:<input type="text" name="items" value="${history.getItems() }" disabled/>
 	<br/>
-	Order Date：<input type="text" name="order_date" value="${history.order_date }" disabled/>
+	Order Date：<input type="text" name="order_date" value="${history.getOrder_date() }" disabled/>
 	<br/>
 	
 </form>

@@ -25,15 +25,15 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	
-	Meat Name :<input type="text" name="meat_name" value="${meat.meat_name }" disabled/>
+	Meat Name :<input type="text" name="meat_name" value="${meat.getMeatName() }" disabled/>
 	<br/>
-	Meat Price ：<input type="text" name="meat_price" value="${meat.meat_price }" disabled/>
+	Meat Price ：<input type="text" name="meat_price" value="${meat.getMeatPrice() }" disabled/>
 	<br/>
-	Meat Weight	：<input type="text" name="meat_weight" value="${meat.meat_weight }" disabled/>
+	Meat Quantity	：<input type="text" name="meat_quantity" value="${meat.getMeatQuantity() }" disabled/>
 	<br/>
-	Product ID ：<input type="text" name="product_id" value="${meat.product_id }" disabled/>
+	Product ID ：<input type="text" name="product_id" value="${meat.getProduct_id() }" disabled/>
 	<br/>
-	Meat Picture ：<input type="text" name="meat_picture" value="${meat.meat_picture }" disabled/>
+	Meat Picture ：<input type="text" name="meat_picture" value="${meat.getMeatPicture() }" disabled/>
 	<br/>
 	
 </form>

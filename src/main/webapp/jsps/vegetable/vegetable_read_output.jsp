@@ -27,13 +27,13 @@
 
 	Product ID: <input type="text" name="product_id" value="${vegetable.product_id }" disabled/>
 	<br/>
-	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.veg_name }" disabled/>
+	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.getVegName() }" disabled/>
 	<br/>
-	Vegetable price: <input type="text" name="veg_price" value="${vegetable.veg_price }" disabled/>
+	Vegetable price: <input type="text" name="veg_price" value="${vegetable.getVegPrice() }" disabled/>
 	<br/>
-	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.veg_quantity }" disabled/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.getVegQuantity() }" disabled/>
 	<br/>
-	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.veg_picture }" disabled/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.getVegPicture() }" disabled/>
 	<br/>
 	
 </form>

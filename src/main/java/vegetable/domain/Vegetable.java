@@ -11,7 +11,7 @@ public class Vegetable {
 	 * Correspond to the user table
 	 */
 	private Integer product_id;
-	private String veg_name;
+    private String veg_name;
 	private double veg_price;
 	private Integer veg_quantity;
 	private String veg_picture;

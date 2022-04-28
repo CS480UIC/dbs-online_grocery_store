@@ -25,13 +25,13 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	
-	Credit Card Number :<input type="text" name="credit_card_number" value="${credit_card.credit_card_number }" disabled/>
+	Credit Card Number :<input type="text" name="credit_card_number" value="${credit_card.getCreditcardnumber() }" disabled/>
 	<br/>
-	CVV：<input type="text" name="cvv" value="${credit_card.cvv }" disabled/>
+	CVV：<input type="text" name="cvv" value="${credit_card.getCvv() }" disabled/>
 	<br/>
-	Expiration Date	：<input type="text" name="expiration_date" value="${credit_card.expiration_date }" disabled/>
+	Expiration Date	：<input type="text" name="expiration_date" value="${credit_card.getExpirationdate() }" disabled/>
 	<br/>
-	 Credit Card Owner Name ：<input type="text" name="credit_card_owner_name" value="${credit_card.credit_card_owner_name }" disabled/>
+	 Credit Card Owner Name ：<input type="text" name="credit_card_owner_name" value="${credit_card.getCreditcardname() }" disabled/>
 	<br/>
 	
 </form>
