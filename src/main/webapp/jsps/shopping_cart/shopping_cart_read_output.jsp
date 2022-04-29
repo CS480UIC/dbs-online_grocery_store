@@ -27,11 +27,11 @@
 
 	User Name ：<input type="text" name="username" value="${shopping_cart.getUsername() }" disabled/>
 	<br/>
-	Product ID :<input type="text" name="productID" value="${shopping_cart.getProduct_id() }" disabled/>
+	Product ID :<input type="text" name="product_id" value="${shopping_cart.getProduct_id() }" disabled/>
 	<br/>
-	Product Price ：<input type="text" name="product_price" value="${shopping_cart.getProduct_price()}" disabled/>
+	Product Price ：<input type="text" name="product_price" value="${shopping_cart.getProduct_price() }" disabled/>
 	<br/>
-	Quantity ：<input type="text" name="quantity" value="${shopping_cart.getQuantity()}" disabled/>
+	Quantity ：<input type="text" name="quantity" value="${shopping_cart.getQuantity() }" disabled/>
 	<br/>
 	
 </form>

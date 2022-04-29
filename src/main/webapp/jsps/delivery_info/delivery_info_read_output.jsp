@@ -25,13 +25,13 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	
-	Driver ID:<input type="text" name="driver_id" value="${delivery_info.driver_id }" disabled/>
+	Driver ID:<input type="text" name="driver_id" value="${delivery_info.getDriver_id() }" disabled/>
 	<br/>
-	User Name：<input type="text" name="user_id" value="${delivery_info.user_id }" disabled/>
+	User Name：<input type="text" name="username" value="${delivery_info.getUsername() }" disabled/>
 	<br/>
-	Driver Proximity	：<input type="text" name="driver_proximity" value="${delivery_info.driver_proximity }" disabled/>
+	Driver Proximity	：<input type="text" name="driver_proximity" value="${delivery_info.getDriver_proximity() }" disabled/>
 	<br/>
-	Vehicle Type	：<input type="text" name="vehicle_type" value="${delivery_info.vehicle_type }" disabled/>
+	Vehicle Type	：<input type="text" name="vehicle_type" value="${delivery_info.getVehicle_type() }" disabled/>
 	<br/>
 	
 </form>

@@ -25,19 +25,19 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
 	
-	User Name   :<input type="text" name="username" value="${person.username }" disabled/>
+	User Name   :<input type="text" name="username" value="${person.getUsername() }" disabled/>
 	<br/>
-	First Name：<input type="text" name="first_name" value="${person.first_name }" disabled/>
+	First Name：<input type="text" name="first_name" value="${person.getFirstName() }" disabled/>
 	<br/>
-	Last Name：<input type="text" name="last_name" value="${person.last_name }" disabled/>
+	Last Name：<input type="text" name="last_name" value="${person.getLastName() }" disabled/>
 	<br/>
-	Address：<input type="text" name="address" value="${person.address }" disabled/>
+	Address：<input type="text" name="address" value="${person.getAddress() }" disabled/>
 	<br/>
-	Email：<input type="text" name="email" value="${person.email }" disabled/>
+	Email：<input type="text" name="email" value="${person.getEmail() }" disabled/>
 	<br/>
-	Password：<input type="password" name="password" value="${person.password }" disabled/>
+	Password：<input type="password" name="password" value="${person.getPassword() }" disabled/>
 	<br/>
-	Credit Card Number：<input type="text" name="credit_card_number" value="${person.password }" disabled/>
+	Credit Card Number：<input type="text" name="credit_card_number" value="${person.getCreditCardNumber() }" disabled/>
 	<br/>
 	
 </form>

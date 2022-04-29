@@ -41,8 +41,8 @@
 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>
 	<br/>
-	Credit Card Number：<input type="text" name="credit_card_number" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Credit Card Number：<input type="text" name="credit_card_number" value="${form.credit_card_number }"/>
+	<span style="color: red; font-weight: 900">${errors.credit_card_number }</span>
 	<br/>
 	<input type="submit" value="Create Person"/>
 </form>

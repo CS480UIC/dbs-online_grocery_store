@@ -26,8 +26,8 @@
 <form action="<c:url value='/HistoryServletRead'/>" method="post">
 
 	<input type="hidden" name="method" value="regist"/>
-	Order Id:<input type="text" name="order_id" value="${form.history }"/>
-	<span style="color: red; font-weight: 900">${errors.history }</span>
+	Order Id:<input type="text" name="order_id" value="${form.order_id }"/>
+	<span style="color: red; font-weight: 900">${errors.order_id }</span>
 	<br/>
 
 	<input type="submit" value="Read History"/>
