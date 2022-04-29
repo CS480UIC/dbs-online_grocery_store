@@ -24,19 +24,19 @@
   <h1>Meat Create</h1>
 <form action="<c:url value='/MeatServletCreate'/>" method="post">
 	Meat Name :<input type="text" name="meat_name" value="${form.meat_name }"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	<span style="color: red; font-weight: 900">${errors.meat_name }</span>
 	<br/>
 	Meat Price：<input type="text" name="meat_price" value="${form.meat_price }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	<span style="color: red; font-weight: 900">${errors.meat_price }</span>
 	<br/>
 	Meat Quantity	：<input type="text" name="meat_quantity" value="${form.meat_quantity }"/>
 	<span style="color: red; font-weight: 900">${errors.meat_quantity }</span>
 	<br/>
 	Product ID	：<input type="text" name="product_id" value="${form.product_id }"/>
-	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
 	Meat Picture	：<input type="text" name="meat_picture" value="${form.meat_picture }"/>
-	<span style="color: red; font-weight: 900">${errors.meat_weight }</span>
+	<span style="color: red; font-weight: 900">${errors.meat_picture }</span>
 	<br/>
 	<input type="submit" value="Create Meat"/>
 </form>
