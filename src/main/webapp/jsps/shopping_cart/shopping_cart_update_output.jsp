@@ -24,32 +24,30 @@
   <h1>Update Shopping Cart</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="productID" value="${form.productID }" disabled/>
+	User Name ：<input type="text" name="username" value="${shopping_cart.getUsername() }" disabled/>
 	<br/>
-	Product Price	：<input type="text" name="product_price" value="${form.product_price}" disabled/>
+	Product ID :<input type="text" name="product_id" value="${shopping_cart.getProduct_id() }" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${form.quantity}" disabled/>
+	Product Price ：<input type="text" name="product_price" value="${shopping_cart.getProduct_price() }" disabled/>
 	<br/>
-	Username	：<input type="text" name="username" value="${form.username}" disabled/>
+	Quantity ：<input type="text" name="quantity" value="${shopping_cart.getQuantity() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
 <form action="<c:url value='/ShoppingCartServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-	Product ID    :<input type="text" name="productID" value="${form.productID }"/>
-	<span style="color: red; font-weight: 900">${errors.productID }</span>
+	User Name ：<input type="text" name="username" value="${form.getUsername() }" disabled/>
 	<br/>
-	Product Price	：<input type="text" name="product_price" value="${form.product_price}"/>
-	<span style="color: red; font-weight: 900">${errors.product_price }</span>
+	Product ID :<input type="text" name="product_id" value="${form.getProduct_id() }" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${form.quantity}"/>
-	<span style="color: red; font-weight: 900">${errors.quantity }</span>
+	Product Price ：<input type="text" name="product_price" value="${form.getProduct_price() }" disabled/>
 	<br/>
-	Username	：<input type="text" name="username" value="${form.username}"/>
-	<span style="color: red; font-weight: 900">${errors.username }</span>
+	Quantity ：<input type="text" name="quantity" value="${form.getQuantity() }" disabled/>
 	<br/>
 	<input type="submit" value="Update Shopping Cart"/>
 </form>
 
 </body>
 </html>
+

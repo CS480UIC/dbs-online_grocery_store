@@ -20,29 +20,37 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Meat</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Meat Name :<input type="text" name="meat_name" value="${meat.getMeatName() }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	Meat Price ：<input type="text" name="meat_price" value="${meat.getMeatPrice() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Meat Quantity	：<input type="text" name="meat_quantity" value="${meat.getMeatQuantity() }" disabled/>
+	<br/>
+	Product ID ：<input type="text" name="product_id" value="${meat.getProduct_id() }" disabled/>
+	<br/>
+	Meat Picture ：<input type="text" name="meat_picture" value="${meat.getMeatPicture() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/MeatServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Meat Name :<input type="text" name="meat_name" value="${form.getMeatName() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Meat Price ：<input type="text" name="meat_price" value="${form.getMeatPrice() }" disabled/>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Meat Quantity	：<input type="text" name="meat_quantity" value="${form.getMeatQuantity() }" disabled/>
+	<br/>
+	Product ID ：<input type="text" name="product_id" value="${form.getProduct_id() }" disabled/>
+	<br/>
+	Meat Picture ：<input type="text" name="meat_picture" value="${form.getMeatPicture() }" disabled/>
+	<br/>
+	<input type="submit" value="Update Meat"/>
 </form>
 
 </body>
 </html>
+

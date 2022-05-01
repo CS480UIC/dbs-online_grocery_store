@@ -21,29 +21,36 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Vegetable</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="product_id1" value="${product_id1.username }" disabled/>
+	Product ID: <input type="text" name="product_id" value="${vegetable.product_id() }" disabled/>
 	<br/>
-	
-	Vegetable Name：<input type="text" name="veg_name1" value="${veg_name1.password }" disabled />
+	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.getVegName() }" disabled/>
 	<br/>
-	Vegetable Price	：<input type="text" name="veg_price1" value="${veg_price1.email }" disabled/>
+	Vegetable price: <input type="text" name="veg_price" value="${vegetable.getVegPrice() }" disabled/>
+	<br/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.getVegQuantity() }" disabled/>
+	<br/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.getVegPicture() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/VegPriceServletUpdate'/>" method="post">
+<form action="<c:url value='/VegetableServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Product ID: <input type="text" name="product_id" value="${form.product_id() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Vegetable Name: <input type="text" name="veg_name" value="${form.getVegName() }" disabled/>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Vegetable price: <input type="text" name="veg_price" value="${form.getVegPrice() }" disabled/>
+	<br/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${form.getVegQuantity() }" disabled/>
+	<br/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${form.getVegPicture() }" disabled/>
+	<input type="submit" value="Update Vegetable"/>
 </form>
 
 </body>
 </html>
+
