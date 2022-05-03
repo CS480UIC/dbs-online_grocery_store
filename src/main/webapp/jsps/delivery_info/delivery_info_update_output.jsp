@@ -21,28 +21,32 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Delivery</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Driver ID:<input type="text" name="driver_id" value="${delivery_info.getDriver_id() }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	User Name：<input type="text" name="username" value="${delivery_info.getUsername() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Driver Proximity	：<input type="text" name="driver_proximity" value="${delivery_info.getDriver_proximity() }" disabled/>
+	<br/>
+	Vehicle Type	：<input type="text" name="vehicle_type" value="${delivery_info.getVehicle_type() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/DeliveryServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Driver ID:<input type="text" name="driver_id" value="${form.getDriver_id() }" />
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	User Name：<input type="text" name="username" value="${form.getUsername() }" />
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Driver Proximity	：<input type="text" name="driver_proximity" value="${form.getDriver_proximity() }" />
+	<br/>
+	Vehicle Type	：<input type="text" name="vehicle_type" value="${form.getVehicle_type() }" />
+	<br/>
+	<input type="submit" value="Update Delivery"/>
+	
 </form>
 
 </body>

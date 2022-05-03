@@ -24,25 +24,28 @@
   <h1>Update Entity</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	Order ID：<input type="text" name="order_id" value="${history.getOrder_id() }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	User name：<input type="text" name="username" value="${history.getUsername() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Items:<input type="text" name="items" value="${history.getItems() }" disabled/>
+	<br/>
+	Order Date：<input type="text" name="order_date" value="${history.getOrder_date() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/HistoryServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Order ID：<input type="text" name="order_id" value="${form.getOrder_id() }" />
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	User name：<input type="text" name="username" value="${form.getUsername() }" />
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Items:<input type="text" name="items" value="${form.getItems() }" />
+	<br/>
+	Order Date：<input type="text" name="order_date" value="${form.getOrder_date() }" />
+	<br/>
+	<input type="submit" value="Update History"/>
 </form>
 
 </body>

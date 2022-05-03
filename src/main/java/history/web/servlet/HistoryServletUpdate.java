@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fruit.dao.FruitDao;
-import fruit.domain.Fruit;
+import history.dao.HistoryDao;
+import history.domain.History;
+
+
 
 /**
  * Servlet implementation class UserServlet
@@ -24,77 +26,77 @@ public class HistoryServletUpdate extends HttpServlet {
 //	/**
 //	 * @see HttpServlet#HttpServlet()
 //	 */
-//	public FruitServletUpdate() {
-//		super();
-//	}
+	public HistoryServletUpdate() {
+		super();
+	}
 //
 //	/**
 //	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 //	 */
-//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		doPost(request,response);
-//	}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request,response);
+	}
 //
 //	/**
 //	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 //	 */
-//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//
-//		String method = request.getParameter("method");
-//		FruitDao entity1dao = new FruitDao();
-//		Fruit entity1 = null;
-//
-//		if(method.equals("search"))
-//		{
-//			try {
-//				entity1 = entity1dao.findByProductID(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//
-//			if(entity1.getUsername()!=null){
-//				request.setAttribute("entity1", entity1);
-//				request.getRequestDispatcher("/jsps/entity1/entity1_update_output.jsp").forward(request, response);
-//
-//			}
-//			else{
-//				request.setAttribute("msg", "Entity not found");
-//				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//			}
-//		}
-//		else if(method.equals("update"))
-//		{
-//			Map<String,String[]> paramMap = request.getParameterMap();
-//			Fruit form = new Fruit();
-//			List<String> info = new ArrayList<String>();
-//
-//			for(String name : paramMap.keySet()) {
-//				String[] values = paramMap.get(name);
-//				info.add(values[0]);
-//			}
-//			form.setPassword(info.get(2));
-//			form.setEmail(info.get(3));
-//			form.setUsername(request.getParameter("username"));
-//
-//			try {
-//				entity1dao.update(form);
-//
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//			request.setAttribute("msg", "Entity Updated");
-//			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//		}
-//	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+		String method = request.getParameter("method");
+		HistoryDao historyDao = new HistoryDao();
+		History history = null;
+
+		if(method.equals("search"))
+		{
+			try {
+				history = historyDao.findByOrderID(request.getParameter("order_id"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+
+			if(history.getUsername()!=null){
+				request.setAttribute("history", history);
+				request.getRequestDispatcher("/jsps/history/history_update_output.jsp").forward(request, response);
+
+			}
+			else{
+				request.setAttribute("msg", "Entity not found");
+				request.getRequestDispatcher("/jsps/history/history_read_output.jsp").forward(request, response);
+			}
+		}
+		else if(method.equals("update"))
+		{
+			Map<String,String[]> paramMap = request.getParameterMap();
+			History form = new History();
+			List<String> info = new ArrayList<String>();
+
+			for(String name : paramMap.keySet()) {
+				String[] values = paramMap.get(name);
+				info.add(values[0]);
+			}
+			
+			form.setOrder_id(info.get(1));
+			form.setItems(Integer.parseInt(info.get(2)));
+			form.setOrder_date(info.get(3));
+			form.setUsername(info.get(4));
+			
+		
+			try {
+				historyDao.update(form);
+
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+			request.setAttribute("msg", "history Updated");
+			request.getRequestDispatcher("/jsps/history/history_read_output.jsp").forward(request, response);
+		}
+	}
 }
-
-
-

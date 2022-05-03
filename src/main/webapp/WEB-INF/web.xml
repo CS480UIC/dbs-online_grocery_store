@@ -117,6 +117,17 @@
   
   <servlet>
     <description></description>
+    <display-name>FruitServletUpdate</display-name>
+    <servlet-name>FruitServletUpdate</servlet-name>
+    <servlet-class>fruit.web.servlet.FruitServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FruitServletUpdate</servlet-name>
+    <url-pattern>/FruitServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>MeatServletCreate</display-name>
     <servlet-name>MeatServletCreate</servlet-name>
     <servlet-class>meat.web.servlet.MeatServletCreate</servlet-class>
@@ -146,6 +157,17 @@
   <servlet-mapping>
     <servlet-name>MeatServletDelete</servlet-name>
     <url-pattern>/MeatServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>MeatServletUpdate</display-name>
+    <servlet-name>MeatServletUpdate</servlet-name>
+    <servlet-class>meat.web.servlet.MeatServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MeatServletUpdate</servlet-name>
+    <url-pattern>/MeatServletUpdate</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -182,6 +204,17 @@
     <url-pattern>/VegetableServletDelete</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <description></description>
+    <display-name>VegetableServletUpdate</display-name>
+    <servlet-name>VegetableServletUpdate</servlet-name>
+    <servlet-class>vegetable.web.servlet.VegetableServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VegetableServletUpdate</servlet-name>
+    <url-pattern>/VegetableServletUpdate</url-pattern>
+  </servlet-mapping>
+  
   
   <servlet>
     <description></description>
@@ -203,6 +236,28 @@
   <servlet-mapping>
     <servlet-name>PersonServletRead</servlet-name>
     <url-pattern>/PersonServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>PersonServletDelete</display-name>
+    <servlet-name>PersonServletDelete</servlet-name>
+    <servlet-class>person.web.servlet.PersonServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonServletDelete</servlet-name>
+    <url-pattern>/PersonServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>PersonServletUpdate</display-name>
+    <servlet-name>PersonServletUpdate</servlet-name>
+    <servlet-class>person.web.servlet.PersonServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonServletUpdate</servlet-name>
+    <url-pattern>/PersonServletUpdate</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -241,6 +296,17 @@
   
   <servlet>
     <description></description>
+    <display-name>CreditCardServletUpdate</display-name>
+    <servlet-name>CreditCardServletUpdate</servlet-name>
+    <servlet-class>credit_card.web.servlet.CreditCardServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreditCardServletUpdate</servlet-name>
+    <url-pattern>/CreditCardServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>DeliveryInfoServletCreate</display-name>
     <servlet-name>DeliveryInfoServletCreate</servlet-name>
     <servlet-class>delivery_info.web.servlet.DeliveryInfoServletCreate</servlet-class>
@@ -274,6 +340,17 @@
   
   <servlet>
     <description></description>
+    <display-name>DeliveryInfoServletUpdate</display-name>
+    <servlet-name>DeliveryInfoServletUpdate</servlet-name>
+    <servlet-class>delivery_info.web.servlet.DeliveryInfoServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeliveryInfoServletUpdate</servlet-name>
+    <url-pattern>/DeliveryInfoServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>ShoppingCartServletCreate</display-name>
     <servlet-name>ShoppingCartServletCreate</servlet-name>
     <servlet-class>shopping_cart.web.servlet.ShoppingCartServletCreate</servlet-class>
@@ -292,6 +369,28 @@
   <servlet-mapping>
     <servlet-name>ShoppingCartServletRead</servlet-name>
     <url-pattern>/ShoppingCartServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShoppingCartServletDelete</display-name>
+    <servlet-name>ShoppingCartServletDelete</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletDelete</servlet-name>
+    <url-pattern>/ShoppingCartServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ShoppingCartServletUpdate</display-name>
+    <servlet-name>ShoppingCartServletUpdate</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletUpdate</servlet-name>
+    <url-pattern>/ShoppingCartServletUpdate</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -325,6 +424,17 @@
   <servlet-mapping>
     <servlet-name>HistoryServletRead</servlet-name>
     <url-pattern>/HistoryServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HistoryServletUpdate</display-name>
+    <servlet-name>HistoryServletUpdate</servlet-name>
+    <servlet-class>history.web.servlet.HistoryServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HistoryServletUpdate</servlet-name>
+    <url-pattern>/HistoryServletUpdate</url-pattern>
   </servlet-mapping>
   
   

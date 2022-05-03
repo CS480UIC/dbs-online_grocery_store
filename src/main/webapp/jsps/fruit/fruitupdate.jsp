@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update Fruit</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/FruitServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update Fruit   :<input type="text" name="fruit_name" value="${form.fruit_name }"/>
 	<span style="color: red; font-weight: 900">${errors.fruit_name }</span>

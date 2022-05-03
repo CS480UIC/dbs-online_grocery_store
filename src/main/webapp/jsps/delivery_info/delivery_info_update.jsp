@@ -22,7 +22,7 @@
   
   <body>
   <h1>Update Delivery Info</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/DeliveryServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
 	Update Delivery Info   :<input type="text" name="delivery_info" value="${form.delivery_info }"/>
 	<span style="color: red; font-weight: 900">${errors.delivery_info }</span>
@@ -31,3 +31,4 @@
 </form>
   </body>
 </html>
+
