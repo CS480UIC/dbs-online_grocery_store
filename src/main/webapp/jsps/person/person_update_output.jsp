@@ -21,28 +21,43 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Person</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	User    :<input type="text" name="username1" value="${entity1.username }" disabled/>
+	User Name   :<input type="text" name="username" value="${person.getUsername() }" disabled/>
 	<br/>
-	
-	Password：<input type="text" name="password1" value="${entity1.password }" disabled />
+	First Name：<input type="text" name="first_name" value="${person.getFirstName() }" disabled/>
 	<br/>
-	Email	：<input type="text" name="email1" value="${entity1.email }" disabled/>
+	Last Name：<input type="text" name="last_name" value="${person.getLastName() }" disabled/>
+	<br/>
+	Address：<input type="text" name="address" value="${person.getAddress() }" disabled/>
+	<br/>
+	Email：<input type="text" name="email" value="${person.getEmail() }" disabled/>
+	<br/>
+	Password：<input type="password" name="password" value="${person.getPassword() }" disabled/>
+	<br/>
+	Credit Card Number：<input type="text" name="credit_card_number" value="${person.getCreditCardNumber() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/PersonServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	User Name   :<input type="text" name="username" value="${form.username }" />
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	First Name：<input type="text" name="first_name" value="${form.first_name}" />
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Last Name：<input type="text" name="last_name" value="${form.last_name}" />
+	<br/>
+	Address：<input type="text" name="address" value="${form.address }" />
+	<br/>
+	Email：<input type="text" name="email" value="${form.email }" />
+	<br/>
+	Password：<input type="password" name="password" value="${form.password }" />
+	<br/>
+	Credit Card Number：<input type="text" name="credit_card_number" value="${form.credit_card_number }" />
+	<br/>
+	<input type="submit" value="Update Person"/>
 </form>
 
 </body>

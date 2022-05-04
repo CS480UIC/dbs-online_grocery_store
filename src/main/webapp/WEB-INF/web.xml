@@ -153,6 +153,17 @@
 		<servlet-name>MeatServletDelete</servlet-name>
 		<url-pattern>/MeatServletDelete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>MeatServletUpdate</display-name>
+		<servlet-name>MeatServletUpdate</servlet-name>
+		<servlet-class>meat.web.servlet.MeatServletUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MeatServletUpdate</servlet-name>
+		<url-pattern>/MeatServletUpdate</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<description></description>
