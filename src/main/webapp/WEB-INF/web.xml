@@ -177,6 +177,18 @@
 		<servlet-name>VegetableServletDelete</servlet-name>
 		<url-pattern>/VegetableServletDelete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>VegetableServletUpdate</display-name>
+		<servlet-name>VegetableServletUpdate</servlet-name>
+		<servlet-class>vegetable.web.servlet.VegetableServletUpdate
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VegetableServletUpdate</servlet-name>
+		<url-pattern>/VegetableServletUpdate</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<description></description>

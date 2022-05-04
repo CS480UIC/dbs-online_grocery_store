@@ -1,3 +1,4 @@
+
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -21,28 +22,40 @@
   </head>
   
   <body>
-  <h1>Update Entity</h1>
+  <h1>Update Vegetable</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="product_id1" value="${product_id1.username }" disabled/>
+	Product ID: <input type="text" name="product_id" value="${vegetable.product_id }" disabled/>
 	<br/>
-	
-	Vegetable Name：<input type="text" name="veg_name1" value="${veg_name1.password }" disabled />
+	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.getVegName() }" disabled/>
 	<br/>
-	Vegetable Price	：<input type="text" name="veg_price1" value="${veg_price1.email }" disabled/>
+	Vegetable price: <input type="text" name="veg_price" value="${vegetable.getVegPrice() }" disabled/>
+	<br/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.getVegQuantity() }" disabled/>
+	<br/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.getVegPicture() }" disabled/>
 	<br/>
 </form>
+
 <h1>Update the values below</h1>
-<form action="<c:url value='/VegPriceServletUpdate'/>" method="post">
+<form action="<c:url value='/VegetableServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-				<input type="hidden" name="username" value="${entity1.username }"/>
-	Password：<input type="password" name="password" value="${form.password }"/>
-	<span style="color: red; font-weight: 900">${errors.password }</span>
+	Product ID: <input type="text" name="product_id" value="${form.product_id }" />
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
-	Email	：<input type="text" name="email" value="${form.email }"/>
-	<span style="color: red; font-weight: 900">${errors.email }</span>
+	Vegetable Name: <input type="text" name="veg_name" value="${form.veg_name }" />
+	<span style="color: red; font-weight: 900">${errors.veg_name }</span>
 	<br/>
-	<input type="submit" value="Update Entity1"/>
+	Vegetable price: <input type="text" name="veg_price" value="${form.veg_price }" />
+	<span style="color: red; font-weight: 900">${errors.veg_price }</span>
+	<br/>
+	Vegetable Quantity: <input type="text" name="veg_quantity" value="${form.veg_quantity }" />
+	<span style="color: red; font-weight: 900">${errors.veg_quantity}</span>
+	<br/>
+	Vegetable Picture: <input type="text" name="veg_picture" value="${form.veg_picture }" />
+	<span style="color: red; font-weight: 900">${errors.veg_picture }</span>
+	<br/>
+	<input type="submit" value="Update Vegetable"/>
 </form>
 
 </body>

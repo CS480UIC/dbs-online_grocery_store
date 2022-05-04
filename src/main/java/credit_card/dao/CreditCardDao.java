@@ -22,7 +22,7 @@ public class CreditCardDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "store"; //TODO change user
+	private String MySQL_user = "final"; //TODO change user
 	
 	/**     
 	 * 
@@ -32,7 +32,7 @@ public class CreditCardDao {
 	 * 
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "password"; //TODO change password
+	private String MySQL_password = "a"; //TODO change password
 
 	public CreditCard findByNumber(Integer number) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		CreditCard credit_card = new CreditCard();

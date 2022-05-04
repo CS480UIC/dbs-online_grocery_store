@@ -22,7 +22,7 @@ public class MeatDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "store"; //TODO change user
+	private String MySQL_user = "final"; //TODO change user
 	
 	/**     
 	 * 
@@ -32,7 +32,7 @@ public class MeatDao {
 	 * 
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "password"; //TODO change password
+	private String MySQL_password = "a"; //TODO change password
 
 	public Meat findByProductID(Integer productID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Meat meat = new Meat();

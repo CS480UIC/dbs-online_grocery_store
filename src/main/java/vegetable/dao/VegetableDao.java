@@ -22,7 +22,7 @@ public class VegetableDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "store"; //TODO change user
+	private String MySQL_user = "final"; //TODO change user
 	
 	/**     
 	 * 
@@ -32,7 +32,7 @@ public class VegetableDao {
 	 * 
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "password"; //TODO change password
+	private String MySQL_password = "a"; //TODO change password
 
 	public Vegetable findByProductID(Integer productID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		Vegetable vegetable = new Vegetable();
@@ -69,6 +69,7 @@ public class VegetableDao {
 	 * @throws InstantiationException 
 	 */
 	
+	
 	public void add(Vegetable form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -94,22 +95,24 @@ public class VegetableDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-//	public void update(Fruit form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
-//			
-//			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,form.getPassword());
-//			preparestatement.setString(2,form.getEmail());
-//		    preparestatement.setString(3,form.getUsername());
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
+	public void update(Vegetable form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			
+			String sql = "UPDATE vegetable SET product_id = ?, veg_name = ?, veg_price = ?, veg_quantity = ?, veg_picture = ?;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setInt(1,form.getProduct_id());
+			preparestatement.setString(2,form.getVegName());
+		    preparestatement.setDouble(3,form.getVegPrice());
+		    preparestatement.setInt(4,form.getVegQuantity());
+		    preparestatement.setString(5,form.getVegPicture());
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 	
 	
 	/**
@@ -132,4 +135,5 @@ public class VegetableDao {
 			throw new RuntimeException(e);
 		}
 	}
+
 }

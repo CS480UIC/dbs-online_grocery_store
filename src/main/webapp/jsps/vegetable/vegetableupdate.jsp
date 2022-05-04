@@ -24,8 +24,8 @@
   <h1>Update Vegetable</h1>
 <form action="<c:url value='/VegetableServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Vegetable   :<input type="text" name="vegetable" value="${form.vegetable }"/>
-	<span style="color: red; font-weight: 900">${errors.vegetable }</span>
+	Update Vegetable   :<input type="text" name="product_id" value="${form.product_id }"/>
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
 	<input type="submit" value="Update Vegetable"/>
 </form>
