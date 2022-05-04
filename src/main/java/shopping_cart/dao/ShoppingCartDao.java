@@ -46,8 +46,8 @@ public class ShoppingCartDao {
 
 		    while(resultSet.next()){
 		    	String user = resultSet.getString("username");
-		    	if(user == username){
-		    		shoppingcart.setUsername(user);
+		    	if(user.equals(username)){
+		    		shoppingcart.setUsername(resultSet.getString("username"));
 		    		shoppingcart.setProduct_price(Double.parseDouble(resultSet.getString("product_price")));
 		    		shoppingcart.setProduct_id(Integer.parseInt(resultSet.getString("product_id")));
 		    		shoppingcart.setQuantity(Integer.parseInt(resultSet.getString("quantity")));
