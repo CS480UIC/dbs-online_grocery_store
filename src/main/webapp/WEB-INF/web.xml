@@ -237,6 +237,19 @@
 
 	<servlet>
 		<description></description>
+		<display-name>CreditCardServletUpdate</display-name>
+		<servlet-name>CreditCardServletUpdate</servlet-name>
+		<servlet-class>credit_card.web.servlet.CreditCardServletUpdate
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreditCardServletUpdate</servlet-name>
+		<url-pattern>/CreditCardServletUpdate</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<description></description>
 		<display-name>CreditCardServletDelete</display-name>
 		<servlet-name>CreditCardServletDelete</servlet-name>
 		<servlet-class>credit_card.web.servlet.CreditCardServletDelete

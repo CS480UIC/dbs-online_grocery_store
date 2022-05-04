@@ -22,10 +22,10 @@
   
   <body>
   <h1>Update Credit Card</h1>
-<form action="<c:url value='/Entity1ServletUpdate'/>" method="post">
+<form action="<c:url value='/CreditCardServletUpdate'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Update Credit Card   :<input type="text" name="credit_card" value="${form.credit_card }"/>
-	<span style="color: red; font-weight: 900">${errors.credit_card }</span>
+	Credit Card Number:<input type="text" name="credit_card_number" value="${form.credit_card_number }"/>
+	<span style="color: red; font-weight: 900">${errors.credit_card_number }</span>
 	<br/>
 	<input type="submit" value="Update Credit Card"/>
 </form>
