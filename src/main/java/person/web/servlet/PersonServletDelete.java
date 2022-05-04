@@ -57,7 +57,7 @@ public class PersonServletDelete extends HttpServlet {
 						request.getRequestDispatcher("/jsps/person/person_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
+				request.setAttribute("msg", "Person not found");
 				request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
 			}
 		}
