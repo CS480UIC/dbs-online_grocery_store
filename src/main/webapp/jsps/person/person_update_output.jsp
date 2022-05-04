@@ -26,6 +26,8 @@
 <form>
 	User Name   :<input type="text" name="username" value="${person.getUsername() }" disabled/>
 	<br/>
+	Password：<input type="password" name="password" value="${person.getPassword() }" disabled/>
+	<br/>
 	First Name：<input type="text" name="first_name" value="${person.getFirstName() }" disabled/>
 	<br/>
 	Last Name：<input type="text" name="last_name" value="${person.getLastName() }" disabled/>
@@ -34,8 +36,7 @@
 	<br/>
 	Email：<input type="text" name="email" value="${person.getEmail() }" disabled/>
 	<br/>
-	Password：<input type="password" name="password" value="${person.getPassword() }" disabled/>
-	<br/>
+	
 	Credit Card Number：<input type="text" name="credit_card_number" value="${person.getCreditCardNumber() }" disabled/>
 	<br/>
 </form>
@@ -45,15 +46,15 @@
 		<input type="hidden" name="method" value="update"/>
 	User Name   :<input type="text" name="username" value="${form.username }" />
 	<br/>
+	Password：<input type="password" name="password" value="${form.password }" />
+	<br/>
 	First Name：<input type="text" name="first_name" value="${form.first_name}" />
 	<br/>
 	Last Name：<input type="text" name="last_name" value="${form.last_name}" />
 	<br/>
-	Address：<input type="text" name="address" value="${form.address }" />
-	<br/>
 	Email：<input type="text" name="email" value="${form.email }" />
 	<br/>
-	Password：<input type="password" name="password" value="${form.password }" />
+	Address：<input type="text" name="address" value="${form.address }" />
 	<br/>
 	Credit Card Number：<input type="text" name="credit_card_number" value="${form.credit_card_number }" />
 	<br/>

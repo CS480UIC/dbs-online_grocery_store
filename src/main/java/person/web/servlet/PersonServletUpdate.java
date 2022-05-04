@@ -100,7 +100,7 @@ public class PersonServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "person Updated");
+			request.setAttribute("msg", "Person Updated");
 			request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
 		}
 	}
