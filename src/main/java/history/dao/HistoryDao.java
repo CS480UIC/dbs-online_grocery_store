@@ -5,14 +5,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import history.domain.History;
+import user.domain.User;
 
 /**
  * DDL functions performed in database
@@ -133,4 +133,30 @@ public class HistoryDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public List<Object> findMostRecentHistory() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			String sql = "SELECT order_id, order_date\n"
+					+ "from history\n"
+					+ "where DATE(order_date) > '2021-10-14'\n"
+					+ "order by order_id asc;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				History history = new History();
+				history.setOrder_id(resultSet.getInt("order_id"));
+				history.setOrder_date(resultSet.getString("order_date"));
+	    		list.add(history);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
 }

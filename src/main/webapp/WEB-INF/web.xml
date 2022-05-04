@@ -448,7 +448,6 @@
 		<url-pattern>/HistoryServletRead</url-pattern>
 	</servlet-mapping>
 
-
 	<servlet>
 		<description></description>
 		<display-name>findAll</display-name>
@@ -460,6 +459,19 @@
 		<servlet-name>findAll</servlet-name>
 		<url-pattern>/findAll</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>MostRecentHistory</display-name>
+		<servlet-name>MostRecentHistory</servlet-name>
+
+		<servlet-class>history.web.servlet.MostRecentHistory</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MostRecentHistory</servlet-name>
+		<url-pattern>/MostRecentHistory</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>login.jsp</welcome-file>
