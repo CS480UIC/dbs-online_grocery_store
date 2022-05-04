@@ -6,7 +6,7 @@
 <html>
   <head>
     
-    <title>Delete Entity</title>
+    <title>Delete Vegetable</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -21,22 +21,22 @@
   </head>
   
   <body>
-  <h1>Delete Entity</h1>
+  <h1>Delete Vegetable</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/VegetableServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="username" value="${entity1.username }"/>
+		<input type="hidden" name="product_id" value="${vegetable.product_id }"/>
 	Product ID: <input type="text" name="product_id" value="${vegetable.product_id }" disabled/>
 	<br/>
 	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.getVegName() }" disabled/>
 	<br/>
-	Vegetable price: <input type="text" name="veg_price" value="${vegetable.getVegPrice() }" disabled/>
+	Vegetable Price: <input type="text" name="veg_price" value="${vegetable.getVegPrice() }" disabled/>
 	<br/>
 	Vegetable Quantity: <input type="text" name="veg_quantity" value="${vegetable.getVegQuantity() }" disabled/>
 	<br/>
 	Vegetable Picture: <input type="text" name="veg_picture" value="${vegetable.getVegPicture() }" disabled/>
 	<br/>
-	<input type="submit" value="Delete Entity1"/>
+	<input type="submit" value="Delete Vegetable"/>
 </form>
 
 </body>

@@ -168,6 +168,18 @@
 
 	<servlet>
 		<description></description>
+		<display-name>VegetableServletDelete</display-name>
+		<servlet-name>VegetableServletDelete</servlet-name>
+		<servlet-class>vegetable.web.servlet.VegetableServletDelete
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VegetableServletDelete</servlet-name>
+		<url-pattern>/VegetableServletDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
 		<display-name>VegetableServletRead</display-name>
 		<servlet-name>VegetableServletRead</servlet-name>
 		<servlet-class>vegetable.web.servlet.VegetableServletRead
@@ -293,6 +305,18 @@
 	<servlet-mapping>
 		<servlet-name>ShoppingCartServletCreate</servlet-name>
 		<url-pattern>/ShoppingCartServletCreate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>ShoppingCartServletDelete</display-name>
+		<servlet-name>ShoppingCartServletDelete</servlet-name>
+		<servlet-class>shopping_cart.web.servlet.ShoppingCartServletDelete
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShoppingCartServletDelete</servlet-name>
+		<url-pattern>/ShoppingCartServletDelete</url-pattern>
 	</servlet-mapping>
 
 	<servlet>
