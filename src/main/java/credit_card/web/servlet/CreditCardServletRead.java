@@ -53,7 +53,7 @@ public class CreditCardServletRead extends HttpServlet {
 		}
 		
 		if(credit_card.getCreditcardnumber()!=null){
-//					System.out.println(credit_card);
+					System.out.println(credit_card);
 					request.setAttribute("credit_card", credit_card);
 					request.getRequestDispatcher("/jsps/credit_card/credit_card_read_output.jsp").forward(request, response);
 			}

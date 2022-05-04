@@ -42,8 +42,9 @@ public class CreditCardServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				System.out.print(request.getParameter("credit_card_number"));
+				//System.out.print(request.getParameter("credit_card_number"));
 				creditCard = creditCardDao.findByNumber(Integer.parseInt(request.getParameter("credit_card_number")));
+				System.out.println(creditCard);
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -53,7 +54,7 @@ public class CreditCardServletDelete extends HttpServlet {
 			}
 		
 			if(creditCard.getCreditcardname()!=null){
-						//System.out.println(creditCard);
+						System.out.println(creditCard);
 						request.setAttribute("creditCard", creditCard);
 						request.getRequestDispatcher("/jsps/credit_card/credit_card_delete_output.jsp").forward(request, response);			
 				}

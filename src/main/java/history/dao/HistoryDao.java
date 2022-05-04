@@ -125,7 +125,7 @@ public class HistoryDao {
 			
 			String sql = "delete from history where order_id = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,order_id_p);
+		    preparestatement.setInt(1,Integer.parseInt(order_id_p));
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

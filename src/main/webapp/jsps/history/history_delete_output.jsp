@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/HistoryServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="order_id" value="${history.order_id }"/>
+		<input type="hidden" name="order_id" value="${history.getOrder_id() }"/>
 
 	Order ID：<input type="text" name="order_id" value="${history.getOrder_id() }" disabled/>
 	<br/>

@@ -25,7 +25,7 @@
 <p style="color: red; font-weight: 900">${msg }</p>
 <form action="<c:url value='/CreditCardServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-	<input type="hidden" name="credit_card_number" value="${credit_card.credit_card_number}"/>
+	<input type="hidden" name="credit_card_number" value="${credit_card.getCreditcardnumber()}"/>
 
 	Credit Card Number :<input type="text" name="credit_card_number" value="${credit_card.getCreditcardnumber() }" disabled/>
 	<br/>
