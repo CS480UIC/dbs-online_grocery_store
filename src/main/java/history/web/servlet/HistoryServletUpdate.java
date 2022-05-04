@@ -96,7 +96,7 @@ public class HistoryServletUpdate extends HttpServlet {
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "history Updated");
+			request.setAttribute("msg", "History Updated");
 			request.getRequestDispatcher("/jsps/history/history_read_output.jsp").forward(request, response);
 		}
 	}
