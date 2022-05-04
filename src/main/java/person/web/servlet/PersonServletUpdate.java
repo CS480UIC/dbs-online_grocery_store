@@ -92,7 +92,6 @@ public class PersonServletUpdate extends HttpServlet {
 			
 			try {
 				personDao.update(form);
-
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
