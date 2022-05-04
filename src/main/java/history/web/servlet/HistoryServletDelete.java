@@ -42,7 +42,7 @@ public class HistoryServletDelete extends HttpServlet {
 		History history = null;
 		if(method.equals("search"))
 		{
-			//.out.print(Integer.parseInt(request.getParameter("order_id")));
+			System.out.print(Integer.parseInt(request.getParameter("order_id")));
 			try {
 				history = historyDao.findByOrderID(Integer.parseInt(request.getParameter("order_id")));
 			} catch (ClassNotFoundException e1) {
