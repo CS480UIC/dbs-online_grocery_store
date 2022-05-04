@@ -82,7 +82,7 @@ public class MeatServletUpdate extends HttpServlet {
 			
 			form.setProduct_id(Integer.parseInt(info.get(1)));
 			form.setMeatName(info.get(2));
-			form.setMeatPrice(Integer.parseInt(info.get(3)));
+			form.setMeatPrice(Double.parseDouble(info.get(3)));
 			form.setMeatQuantity(Integer.parseInt(info.get(4)));
 			form.setMeatPicture(info.get(5));
 			
