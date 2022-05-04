@@ -295,6 +295,18 @@
 		<servlet-name>DeliveryInfoServletDelete</servlet-name>
 		<url-pattern>/DeliveryInfoServletDelete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>DeliveryInfoServletUpdate</display-name>
+		<servlet-name>DeliveryInfoServletUpdate</servlet-name>
+		<servlet-class>delivery_info.web.servlet.DeliveryInfoServletUpdate
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeliveryInfoServletUpdate</servlet-name>
+		<url-pattern>/DeliveryInfoServletUpdate</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<description></description>
