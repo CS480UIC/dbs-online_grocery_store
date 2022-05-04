@@ -391,6 +391,18 @@
 		<servlet-name>HistoryServletDelete</servlet-name>
 		<url-pattern>/HistoryServletDelete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>HistoryServletUpdate</display-name>
+		<servlet-name>HistoryServletUpdate</servlet-name>
+		<servlet-class>history.web.servlet.HistoryServletUpdate
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HistoryServletUpdate</servlet-name>
+		<url-pattern>/HistoryServletUpdate</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<description></description>
