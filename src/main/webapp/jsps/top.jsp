@@ -50,7 +50,7 @@
 			<a href="<c:url value='/jsps/delivery_info/menu.jsp'/>" target="body">CRUD delivery info</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/fruit/menu.jsp'/>" target="body">CRUD Fruit</a> |&nbsp;&nbsp;
 			<a href="<c:url value='/jsps/shopping_cart/menu.jsp'/>" target="body">CRUD Shopping Cart</a> |&nbsp;&nbsp;
-			<a href="<c:url value='/jsps/Person/menu.jsp'/>" target="body">CRUD Person</a> |&nbsp;&nbsp;
+			<a href="<c:url value='/jsps/person/menu.jsp'/>" target="body">CRUD Person</a> |&nbsp;&nbsp;
 			
 		</c:otherwise>
 	</c:choose>

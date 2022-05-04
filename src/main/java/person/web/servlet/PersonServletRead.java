@@ -8,8 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fruit.dao.FruitDao;
-import fruit.domain.Fruit;
 import person.dao.PersonDao;
 import person.domain.Person;
 
@@ -55,14 +53,12 @@ public class PersonServletRead extends HttpServlet {
 		if(person.getUsername()!=null){
 					System.out.println(person);
 					request.setAttribute("person", person);
-					request.getRequestDispatcher("/jsps/Person/person_read_output.jsp").forward(request, response);
+					request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
 			}
 			else{
 			request.setAttribute("msg", "Person not found");
-			request.getRequestDispatcher("/jsps/Person/person_read_output.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
 		}
 	}
 }
-
-
 

@@ -24,10 +24,10 @@
   <body>
     <h1>CRUD operations for Person </h1>
     <br>
-	<a href="<c:url value='/jsps/Person/personcreate.jsp'/>" target="_parent">Create Person</a> |&nbsp; 
-	<a href="<c:url value='/jsps/Person/personread.jsp'/>" target="_parent">Read Person</a> |&nbsp;
-	<a href="<c:url value='/jsps/Person/personupdate.jsp'/>" target="_parent">Update Person</a> |&nbsp;	 
-	<a href="<c:url value='/jsps/Person/persondelete.jsp'/>" target="_parent">Delete Person</a>	
+	<a href="<c:url value='/jsps/person/personcreate.jsp'/>" target="_parent">Create Person</a> |&nbsp; 
+	<a href="<c:url value='/jsps/person/personread.jsp'/>" target="_parent">Read Person</a> |&nbsp;
+	<a href="<c:url value='/jsps/person/personupdate.jsp'/>" target="_parent">Update Person</a> |&nbsp;	 
+	<a href="<c:url value='/jsps/person/persondelete.jsp'/>" target="_parent">Delete Person</a>	
 	    
   </body>
 </html>
