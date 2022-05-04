@@ -34,18 +34,18 @@ public class HistoryDao {
 	 */
 	private String MySQL_password = "password"; //TODO change password
 
-	public History findByOrderID(String orderID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public History findByOrderID(Integer orderID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		History history = new History();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
 		    String sql = "select * from history where order_id = ?";
 		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,orderID);
+		    preparestatement.setInt(1,orderID);
 		    ResultSet resultSet = preparestatement.executeQuery();
 
 		    while(resultSet.next()){
-		    	String id = resultSet.getString("order_id");
+		    	Integer id = Integer.parseInt(resultSet.getString("order_id"));
 		    	if(id == orderID){
 		    		history.setOrder_id(id);
 		    		history.setUsername(resultSet.getString("username"));
@@ -75,7 +75,7 @@ public class HistoryDao {
 			
 			String sql = "insert into history (order_id, items, order_date, username) values(?,?,?,?)";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setString(1,form.getOrder_id());
+		    preparestatement.setInt(1,form.getOrder_id());
 		    preparestatement.setInt(2,form.getItems());
 		    preparestatement.setDate(3, java.sql.Date.valueOf(form.getOrder_date()));
 		    preparestatement.setString(4,form.getUsername());

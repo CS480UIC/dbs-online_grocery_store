@@ -43,7 +43,7 @@ public class HistoryServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				history = historyDao.findByOrderID(request.getParameter("product_id"));
+				history = historyDao.findByOrderID(Integer.parseInt(request.getParameter("product_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {

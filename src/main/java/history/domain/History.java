@@ -10,20 +10,20 @@ public class History {
 	/*
 	 * Correspond to the user table
 	 */
-	private String order_id;
+	private Integer order_id;
 	private Integer items;
 	private String order_date;
 	private String username;
 	/**
 	 * @return the order_id
 	 */
-	public String getOrder_id() {
+	public Integer getOrder_id() {
 		return order_id;
 	}
 	/**
 	 * @param order_id the order_id to set
 	 */
-	public void setOrder_id(String order_id) {
+	public void setOrder_id(Integer order_id) {
 		this.order_id = order_id;
 	}
 	/**
