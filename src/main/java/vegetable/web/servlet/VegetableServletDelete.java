@@ -55,7 +55,7 @@ public class VegetableServletDelete extends HttpServlet {
 						request.getRequestDispatcher("/jsps/vegetable/vegetable_delete_output.jsp").forward(request, response);			
 				}
 				else{
-				request.setAttribute("msg", "Entity not found");
+				request.setAttribute("msg", "Vegetable not found");
 				request.getRequestDispatcher("/jsps/vegetable/vegetable_read_output.jsp").forward(request, response);
 			}
 		}

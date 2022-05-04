@@ -123,7 +123,7 @@ public class CreditCardDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
 			
-			String sql = "delete from credit_card where username = ?";
+			String sql = "delete from credit_card where credit_card_number = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setInt(1,Integer.parseInt(credit_card_number_p));
 		    preparestatement.executeUpdate();

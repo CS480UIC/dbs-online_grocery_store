@@ -54,8 +54,8 @@ public class CreditCardServletDelete extends HttpServlet {
 			}
 		
 			if(creditCard.getCreditcardname()!=null){
-						System.out.println(creditCard);
-						request.setAttribute("creditCard", creditCard);
+						//System.out.println(creditCard);
+						request.setAttribute("credit_card", creditCard);
 						request.getRequestDispatcher("/jsps/credit_card/credit_card_delete_output.jsp").forward(request, response);			
 				}
 			else{

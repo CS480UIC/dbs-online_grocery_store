@@ -24,8 +24,8 @@
   <h1>Delete Vegetable</h1>
 <form action="<c:url value='/VegetableServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete vegetable   :<input type="text" name="vegetable" value="${form.vegetable }"/>
-	<span style="color: red; font-weight: 900">${errors.vegetable }</span>
+	Delete vegetable   :<input type="text" name="product_id" value="${form.product_id }"/>
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
 	<input type="submit" value="Delete Vegetable"/>
 </form>

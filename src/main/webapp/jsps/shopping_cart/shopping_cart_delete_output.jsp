@@ -26,13 +26,13 @@
 <form action="<c:url value='/ShoppingCartServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="username" value="${shopping_cart.username }"/>
-	Product ID    :<input type="text" name="productID" value="${shopping_cart.productID }" disabled/>
+	User Name ：<input type="text" name="username" value="${shopping_cart.getUsername() }" disabled/>
 	<br/>
-	Product Price	：<input type="text" name="product_price" value="${shopping_cart.product_price}" disabled/>
+	Product ID :<input type="text" name="productID" value="${shopping_cart.getProduct_id() }" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${shopping_cart.quantity}" disabled/>
+	Product Price ：<input type="text" name="product_price" value="${shopping_cart.getProduct_price()}" disabled/>
 	<br/>
-	Username	：<input type="text" name="username" value="${shopping_cart.username}" disabled/>
+	Quantity ：<input type="text" name="quantity" value="${shopping_cart.getQuantity()}" disabled/>
 	<br/>
 	<input type="submit" value="Delete Shopping Cart"/>
 </form>

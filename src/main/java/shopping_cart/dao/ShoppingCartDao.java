@@ -118,18 +118,18 @@ public class ShoppingCartDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-//	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
-//			
-//			String sql = "delete from entity1 where username = ?";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,username);
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
+	public void delete(String username_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			
+			String sql = "delete from shopping_cart where username = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,username_p);
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }
