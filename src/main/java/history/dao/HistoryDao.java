@@ -22,7 +22,7 @@ public class HistoryDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "final"; //TODO change user
+	private String MySQL_user = "store"; //TODO change user
 	
 	/**     
 	 * 
@@ -32,7 +32,7 @@ public class HistoryDao {
 	 * 
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "a"; //TODO change password
+	private String MySQL_password = "password"; //TODO change password
 
 	public History findByOrderID(Integer orderID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		History history = new History();
