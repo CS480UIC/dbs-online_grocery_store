@@ -26,7 +26,7 @@
 <form action="<c:url value='/VegetableServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="product_id" value="${vegetable.product_id }"/>
-	Product ID: <input type="text" name="product_id" value="${vegetable.product_id }" disabled/>
+	Product ID: <input type="text" name="product_id" value="${vegetable.getProduct_id() }" disabled/>
 	<br/>
 	Vegetable Name: <input type="text" name="veg_name" value="${vegetable.getVegName() }" disabled/>
 	<br/>
