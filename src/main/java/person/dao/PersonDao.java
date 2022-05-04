@@ -104,7 +104,7 @@ public class PersonDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
 			
-			String sql = "UPDATE person SET username = ?, password = ?, first_name = ?, last_name = ?, email = ?, address = ?, credit_card_number = ?;";
+			String sql = "UPDATE customer SET username = ?, password = ?, first_name = ?, last_name = ?, email = ?, address = ?, credit_card_number = ?;";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
 		    preparestatement.setString(1,form.getUsername());
 			preparestatement.setString(2,form.getPassword());

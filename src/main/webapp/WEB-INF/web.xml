@@ -109,6 +109,17 @@
 		<servlet-name>FruitServletDelete</servlet-name>
 		<url-pattern>/FruitServletDelete</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>FruitServletUpdate</display-name>
+		<servlet-name>FruitServletUpdate</servlet-name>
+		<servlet-class>fruit.web.servlet.FruitServletUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FruitServletUpdate</servlet-name>
+		<url-pattern>/FruitServletUpdate</url-pattern>
+	</servlet-mapping>
 
 	<servlet>
 		<description></description>
@@ -233,6 +244,17 @@
 	<servlet-mapping>
 		<servlet-name>PersonServletRead</servlet-name>
 		<url-pattern>/PersonServletRead</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>PersonServletUpdate</display-name>
+		<servlet-name>PersonServletUpdate</servlet-name>
+		<servlet-class>person.web.servlet.PersonServletUpdate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PersonServletUpdate</servlet-name>
+		<url-pattern>/PersonServletUpdate</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
