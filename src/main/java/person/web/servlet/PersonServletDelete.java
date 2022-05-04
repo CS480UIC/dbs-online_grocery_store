@@ -1,4 +1,4 @@
-package Person.web.servlet;
+package person.web.servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -37,12 +37,12 @@ public class PersonServletDelete extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String method = request.getParameter("method");
-		PersonDao PersonDao = new FruitDao();
+		PersonDao personDao = new PersonDao();
 		Person person = null;
 		if(method.equals("search"))
 		{
 			try {
-				entity1 = entity1Dao.findByProductID(request.getParameter("username"));
+				person = personDao.findByUsername(request.getParameter("username"));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -51,28 +51,28 @@ public class PersonServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(entity1.getUsername()!=null){
-						System.out.println(entity1);
-						request.setAttribute("entity1", entity1);
-						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
+			if(person.getUsername()!=null){
+						System.out.println(person);
+						request.setAttribute("person", person);
+						request.getRequestDispatcher("/jsps/person/person_delete_output.jsp").forward(request, response);			
 				}
 				else{
 				request.setAttribute("msg", "Entity not found");
-				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+				request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
 			}
 		}
 		else if(method.equals("delete"))
 		{	
 			try {
-				entity1Dao.delete(request.getParameter("username"));
+				personDao.delete(request.getParameter("username"));
 		} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {				e1.printStackTrace();
 			} catch (IllegalAccessException e1) {
 				e1.printStackTrace();
 			}
-			request.setAttribute("msg", "Entity Deleted");
-			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
+			request.setAttribute("msg", "Person Deleted");
+			request.getRequestDispatcher("/jsps/person/person_read_output.jsp").forward(request, response);
 		}
 	}
 }
