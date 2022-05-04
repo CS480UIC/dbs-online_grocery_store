@@ -43,7 +43,7 @@ public class HistoryServletRead extends HttpServlet {
 		HistoryDao historyDao = new HistoryDao();
 		
 		try {
-			history = historyDao.findByOrderID(request.getParameter("order_id"));
+			history = historyDao.findByOrderID(Integer.parseInt(request.getParameter("order_id")));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
 		} catch (InstantiationException e1) {

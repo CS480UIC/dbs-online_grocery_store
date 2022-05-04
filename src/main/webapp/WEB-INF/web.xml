@@ -59,6 +59,7 @@
     <servlet-name>UserServletRegister</servlet-name>
     <url-pattern>/UserServletRegister</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>UserServletLogin</display-name>
@@ -449,6 +450,19 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>deliveryInfos</display-name>
+    <servlet-name>deliveryInfos</servlet-name>
+    
+    <servlet-class>delivery_info.web.servlet.deliveryInfos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deliveryInfos</servlet-name>
+    <url-pattern>/deliveryInfos</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

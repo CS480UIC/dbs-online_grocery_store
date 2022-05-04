@@ -51,7 +51,7 @@ public class HistoryServletCreate extends HttpServlet {
 			info.add(values[0]);
 		}
 		
-		form.setOrder_id(info.get(0));
+		form.setOrder_id(Integer.parseInt(info.get(0)));
 		form.setUsername(info.get(1));
 		form.setItems(Integer.parseInt(info.get(2)));
 		form.setOrder_date(info.get(3));

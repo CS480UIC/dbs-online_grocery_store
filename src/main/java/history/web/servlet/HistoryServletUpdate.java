@@ -49,7 +49,7 @@ public class HistoryServletUpdate extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				history = historyDao.findByOrderID(request.getParameter("order_id"));
+				history = historyDao.findByOrderID(Integer.parseInt(request.getParameter("order_id")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -79,7 +79,7 @@ public class HistoryServletUpdate extends HttpServlet {
 				info.add(values[0]);
 			}
 			
-			form.setOrder_id(info.get(1));
+			form.setOrder_id(Integer.parseInt(info.get(1)));
 			form.setItems(Integer.parseInt(info.get(2)));
 			form.setOrder_date(info.get(3));
 			form.setUsername(info.get(4));

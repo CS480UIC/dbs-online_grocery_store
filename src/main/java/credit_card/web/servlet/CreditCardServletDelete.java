@@ -8,8 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import credit_card.dao.CreditCardDao;
 import credit_card.domain.CreditCard;
-import fruit.dao.FruitDao;
-import fruit.domain.Fruit;
+
 
 
 /**
@@ -23,8 +22,8 @@ public class CreditCardServletDelete extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public CreditCardServletDelete() {
-        super();
-    }
+      super();
+   }
     
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -43,7 +42,8 @@ public class CreditCardServletDelete extends HttpServlet {
 		if(method.equals("search"))
 		{
 			try {
-				creditCard = creditCardDao.findByNumber((Integer.parseInt(request.getParameter("credit_card_number"))));
+				System.out.print(request.getParameter("credit_card_number"));
+				creditCard = creditCardDao.findByNumber(Integer.parseInt(request.getParameter("credit_card_number")));
 			} catch (ClassNotFoundException e1) {
 				e1.printStackTrace();
 			} catch (InstantiationException e1) {
@@ -52,12 +52,12 @@ public class CreditCardServletDelete extends HttpServlet {
 				e1.printStackTrace();
 			}
 		
-			if(creditCard.getCreditcardnumber()!=null){
-						System.out.println(creditCard);
+			if(creditCard.getCreditcardname()!=null){
+						//System.out.println(creditCard);
 						request.setAttribute("creditCard", creditCard);
 						request.getRequestDispatcher("/jsps/credit_card/credit_card_delete_output.jsp").forward(request, response);			
 				}
-				else{
+			else{
 				request.setAttribute("msg", "Credit Card not found");
 				request.getRequestDispatcher("/jsps/credit_card/credit_card_read_output.jsp").forward(request, response);
 			}
@@ -78,6 +78,3 @@ public class CreditCardServletDelete extends HttpServlet {
 		}
 	}
 }
-
-
-

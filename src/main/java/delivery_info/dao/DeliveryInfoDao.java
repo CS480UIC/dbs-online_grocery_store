@@ -5,14 +5,15 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import delivery_info.domain.DeliveryInfo;
+import delivery_info.domain.DeliveryInfos;
+import user.domain.User;
 
 /**
  * DDL functions performed in database
@@ -22,7 +23,7 @@ public class DeliveryInfoDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "store"; //TODO change user
+	private static String MySQL_user = "store"; //TODO change user
 	
 	/**     
 	 * 
@@ -32,7 +33,7 @@ public class DeliveryInfoDao {
 	 * 
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "password"; //TODO change password
+	private static String MySQL_password = "password"; //TODO change password
 
 	public DeliveryInfo findByDriverID(Integer driverID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		DeliveryInfo deliveryInfo = new DeliveryInfo();
@@ -134,4 +135,29 @@ public class DeliveryInfoDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public static List<Object> findDeliveryInfo() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			String sql = "select * from delivery_info";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				DeliveryInfos deliveryInfo = new DeliveryInfos();
+				deliveryInfo.setUsername(resultSet.getString("username"));
+				deliveryInfo.setDriver_id(Integer.parseInt(resultSet.getString("driver_id")));
+				deliveryInfo.setVehicle_type(resultSet.getString("vehicle_type"));
+				deliveryInfo.setDriver_proximity(resultSet.getString("driver_proximity"));
+	    		list.add(deliveryInfo);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
 }

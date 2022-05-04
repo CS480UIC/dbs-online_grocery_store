@@ -118,14 +118,14 @@ public class CreditCardDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-	public void delete(String credit_card_number) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public void delete(String credit_card_number_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
 			
 			String sql = "delete from credit_card where username = ?";
 			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-		    preparestatement.setInt(1,Integer.parseInt("credit_card_number"));
+		    preparestatement.setInt(1,Integer.parseInt(credit_card_number_p));
 		    preparestatement.executeUpdate();
 		    connect.close();
 		} catch(SQLException e) {

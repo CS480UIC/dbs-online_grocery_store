@@ -25,7 +25,10 @@
     <h1>Welcome to the Online Grocery Store</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 
+	<br>
+    <a href="<c:url value='/deliveryInfo'/>" target="body">Please list all the delivery info in the table</a>&nbsp;&nbsp;
+    <br>
+    <a href="<c:url value='/findAll'/>" target="body">Please list all the history in the table</a>&nbsp;&nbsp;
     
   </body>
 </html>
