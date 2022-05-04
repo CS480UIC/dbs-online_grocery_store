@@ -1,0 +1,135 @@
+package history.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
+
+
+//import java.util.ArrayList;
+//import java.util.List;
+
+import history.domain.History;
+
+/**
+ * DDL functions performed in database
+ */
+public class HistoryDao {
+	
+	/**
+	 * user name to connect to the database 
+	 */
+	private String MySQL_user = "store"; //TODO change user
+	
+	/**     
+	 * 
+	 * 
+	 * 
+	 * 
+	 * 
+	 * password of your username to connect to the database
+	 */
+	private String MySQL_password = "password"; //TODO change password
+
+	public History findByOrderID(String orderID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		History history = new History();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+		    String sql = "select * from history where order_id = ?";
+		    PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,orderID);
+		    ResultSet resultSet = preparestatement.executeQuery();
+
+		    while(resultSet.next()){
+		    	String id = resultSet.getString("order_id");
+		    	if(id == orderID){
+		    		history.setOrder_id(id);
+		    		history.setUsername(resultSet.getString("username"));
+		    		history.setItems(Integer.parseInt(resultSet.getString("items")));
+		    		history.setOrder_date(resultSet.getString("order_date"));
+		    	}
+		    }
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return history;
+	}	
+	
+	/**
+	 * insert Entity1       
+	 * @param form
+	 * @throws ClassNotFoundException  
+	 * @throws IllegalAccessException 
+	 * @throws InstantiationException 
+	 */
+	
+	public void add(History form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			
+			String sql = "insert into history (order_id, items, order_date, username) values(?,?,?,?)";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,form.getOrder_id());
+		    preparestatement.setInt(2,form.getItems());
+		    preparestatement.setDate(3, java.sql.Date.valueOf(form.getOrder_date()));
+		    preparestatement.setString(4,form.getUsername());
+
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
+	
+	
+	/**
+	 * @param form
+	 * @throws ClassNotFoundException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 */
+//	public void update(Fruit form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+//		try {
+//			Class.forName("com.mysql.cj.jdbc.Driver");
+//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+//			
+//			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
+//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+//		    preparestatement.setString(1,form.getPassword());
+//			preparestatement.setString(2,form.getEmail());
+//		    preparestatement.setString(3,form.getUsername());
+//		    preparestatement.executeUpdate();
+//		    connect.close();
+//		} catch(SQLException e) {
+//			throw new RuntimeException(e);
+//		}
+//	}
+	
+	
+	/**
+	 * @param username
+	 * @throws ClassNotFoundException
+	 * @throws InstantiationException
+	 * @throws IllegalAccessException
+	 */
+	public void delete(String order_id_p) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			
+			String sql = "delete from history where order_id = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,order_id_p);
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
+}
