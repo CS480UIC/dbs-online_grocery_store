@@ -25,9 +25,10 @@
     <h1>List of Queries</h1>
     <br>
     <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 	<br>
- 	<a href="<c:url value='/findAll'/>" target="body">Please list all the expensive meat in the table</a>&nbsp;&nbsp;
- 
+    <br>
+    <a href="<c:url value='/MostRecentHistory'/>" target="body">Please list all the most recent orders</a>&nbsp;&nbsp;
+    <br>
+    <a href="<c:url value='/customerAndDriver'/>" target="body">Please list all the Customer Person Relationships</a>&nbsp;&nbsp;
     
   </body>
 </html>
