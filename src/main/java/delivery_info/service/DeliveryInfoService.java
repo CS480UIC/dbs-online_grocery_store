@@ -1,6 +1,8 @@
 package delivery_info.service;
 
 
+import java.util.List;
+
 import delivery_info.dao.DeliveryInfoDao;
 import delivery_info.domain.DeliveryInfo;
 
@@ -24,6 +26,11 @@ public class DeliveryInfoService {
 		DeliveryInfo entity1 = deliveryInfoDao.findByDriverID(form.getDriver_id());
 		if(entity1.getDriver_id()!=null && entity1.getDriver_id() == form.getDriver_id()) throw new DeliveryInfoException("This driver Info has been registered!");
 		deliveryInfoDao.add(form);
+	}
+	
+	public List<Object> findCustomerAndDriver() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return DeliveryInfoDao.findCustomerAndDriver();
+		
 	}
 	
 }

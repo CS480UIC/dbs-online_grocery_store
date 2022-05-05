@@ -5,14 +5,16 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
-
-
+import delivery_info.domain.CustomersAndDrivers;
 
 //import java.util.ArrayList;
 //import java.util.List;
 
 import delivery_info.domain.DeliveryInfo;
+import user.domain.User;
 
 /**
  * DDL functions performed in database
@@ -22,7 +24,7 @@ public class DeliveryInfoDao {
 	/**
 	 * user name to connect to the database 
 	 */
-	private String MySQL_user = "store"; //TODO change user
+	private static String MySQL_user = "store"; //TODO change user
 	
 	/**     
 	 * 
@@ -32,7 +34,7 @@ public class DeliveryInfoDao {
 	 * 
 	 * password of your username to connect to the database
 	 */
-	private String MySQL_password = "password"; //TODO change password
+	private static String MySQL_password = "password"; //TODO change password
 
 	public DeliveryInfo findByDriverID(Integer driverID) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		DeliveryInfo deliveryInfo = new DeliveryInfo();
@@ -135,4 +137,31 @@ public class DeliveryInfoDao {
 			throw new RuntimeException(e);
 		}
 	}
+	
+	public static List<Object> findCustomerAndDriver() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			String sql = "SELECT delivery_info.driver_id, delivery_info.vehicle_type, customer.first_name\n"
+					+ "from delivery_info\n"
+					+ "join customer on delivery_info.username = customer.username\n"
+					+ "order by customer.first_name asc;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				CustomersAndDrivers customersAndDriver = new CustomersAndDrivers();
+				customersAndDriver.setFirst_name(resultSet.getString("first_name"));
+				customersAndDriver.setDriver_id(resultSet.getInt("driver_id"));
+				customersAndDriver.setVehicle_type(resultSet.getString("vehicle_type"));
+	    		list.add(customersAndDriver);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
+	}
+	
 }

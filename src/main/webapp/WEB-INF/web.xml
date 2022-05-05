@@ -462,6 +462,18 @@
 	
 	<servlet>
 		<description></description>
+		<display-name>customerAndDriver</display-name>
+		<servlet-name>customerAndDriver</servlet-name>
+
+		<servlet-class>delivery_info.web.servlet.customerAndDriver</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerAndDriver</servlet-name>
+		<url-pattern>/customerAndDriver</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
 		<display-name>MostRecentHistory</display-name>
 		<servlet-name>MostRecentHistory</servlet-name>
 

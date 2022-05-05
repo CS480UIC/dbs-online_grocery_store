@@ -40,3 +40,8 @@ SELECT product_name from shopping_cart
 join on fruit.product_id=shopping_cart.product_id
 where product_id =  9876
 order by product_name asc;
+
+SELECT delivery_info.driver_id, delivery_info.vehicle_type, customer.first_name
+from delivery_info
+join customer on delivery_info.username = customer.username
+order by customer.first_name asc;
