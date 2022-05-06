@@ -52,10 +52,10 @@ public class FruitServletCreate extends HttpServlet {
 		}
 		
 		form.setProduct_id(Integer.parseInt(info.get(0)));
-		form.setFruitName(info.get(1));
-		form.setFruitPrice(Double.parseDouble(info.get(2)));		
-		form.setFruitQuantity(Integer.parseInt(info.get(3)));
-		form.setFruitPicture(info.get(4));
+		form.setFruit_name(info.get(1));
+		form.setFruit_price(Double.parseDouble(info.get(2)));		
+		form.setFruit_quantity(Integer.parseInt(info.get(3)));
+		form.setFruit_picture(info.get(4));
 		
 		try {
 			entity1service.create(form);

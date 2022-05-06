@@ -26,7 +26,7 @@
 <form action="<c:url value='/ShoppingCartServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
 		<input type="hidden" name="username" value="${shopping_cart.username }"/>
-	Product ID    :<input type="text" name="productID" value="${shopping_cart.productID }" disabled/>
+	Product ID    :<input type="text" name="product_id" value="${shopping_cart.product_id }" disabled/>
 	<br/>
 	Product Price	：<input type="text" name="product_price" value="${shopping_cart.product_price}" disabled/>
 	<br/>

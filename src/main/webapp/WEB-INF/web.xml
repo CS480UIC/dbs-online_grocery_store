@@ -95,6 +95,39 @@
   
   <servlet>
     <description></description>
+    <display-name>FruitServletRead</display-name>
+    <servlet-name>FruitServletRead</servlet-name>
+    <servlet-class>fruit.web.servlet.FruitServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FruitServletRead</servlet-name>
+    <url-pattern>/FruitServletRead</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FruitServletUpdate</display-name>
+    <servlet-name>FruitServletUpdate</servlet-name>
+    <servlet-class>fruit.web.servlet.FruitServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FruitServletUpdate</servlet-name>
+    <url-pattern>/FruitServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>FruitServletDelete</display-name>
+    <servlet-name>FruitServletDelete</servlet-name>
+    <servlet-class>fruit.web.servlet.FruitServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FruitServletDelete</servlet-name>
+    <url-pattern>/FruitServletDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
     <display-name>MeatServletCreate</display-name>
     <servlet-name>MeatServletCreate</servlet-name>
     <servlet-class>meat.web.servlet.MeatServletCreate</servlet-class>
@@ -159,6 +192,40 @@
     <url-pattern>/ShoppingCartServletCreate</url-pattern>
   </servlet-mapping>
   
+  
+  <servlet>
+    <description></description>
+    <display-name>ShoppingCartServletRead</display-name>
+    <servlet-name>ShoppingCartServletRead</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletRead</servlet-name>
+    <url-pattern>/ShoppingCartServletRead</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>ShoppingCartServletUpdate</display-name>
+    <servlet-name>ShoppingCartServletUpdate</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletUpdate</servlet-name>
+    <url-pattern>/ShoppingCartServletUpdate</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>ShoppingCartServletDelete</display-name>
+    <servlet-name>ShoppingCartServletDelete</servlet-name>
+    <servlet-class>shopping_cart.web.servlet.ShoppingCartServletDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShoppingCartServletDelete</servlet-name>
+    <url-pattern>/ShoppingCartServletDelete</url-pattern>
+  </servlet-mapping>
+  
   <servlet>
     <description></description>
     <display-name>HistoryServletCreate</display-name>
@@ -182,6 +249,43 @@
     <servlet-name>findAll</servlet-name>
     <url-pattern>/findAll</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>findFruits</display-name>
+    <servlet-name>findFruits</servlet-name>
+    
+    <servlet-class>fruit.web.servlet.findFruits</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findFruits</servlet-name>
+    <url-pattern>/findFruits</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description></description>
+    <display-name>findFruitOrders</display-name>
+    <servlet-name>findFruitOrders</servlet-name>
+    
+    <servlet-class>fruit.web.servlet.findFruitOrders</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findFruitOrders</servlet-name>
+    <url-pattern>/findFruitOrders</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>findExpensiveFruits</display-name>
+    <servlet-name>findExpensiveFruits</servlet-name>
+    
+    <servlet-class>fruit.web.servlet.findExpensiveFruits</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>findExpensiveFruits</servlet-name>
+    <url-pattern>/findExpensiveFruits</url-pattern>
+  </servlet-mapping>
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>

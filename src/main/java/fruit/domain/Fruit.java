@@ -36,7 +36,7 @@ public class Fruit {
 	/**
 	 * @return the fruitName
 	 */
-	public String getFruitName() {
+	public String getFruit_name() {
 		return fruit_name;
 	}
 
@@ -44,21 +44,21 @@ public class Fruit {
 	/**
 	 * @param fruitName the fruitName to set
 	 */
-	public void setFruitName(String fruitName) {
+	public void setFruit_name(String fruitName) {
 		this.fruit_name = fruitName;
 	}
 
 	/**
 	 * @return the fruitPrice
 	 */
-	public double getFruitPrice() {
+	public double getFruit_price() {
 		return fruit_price;
 	}
 
 	/**
 	 * @param fruitPrice the fruitPrice to set
 	 */
-	public void setFruitPrice(double  fruitPrice) {
+	public void setFruit_price(double  fruitPrice) {
 		this.fruit_price = fruitPrice;
 	}
 
@@ -66,7 +66,7 @@ public class Fruit {
 	/**
 	 * @return the fruitQuantity
 	 */
-	public Integer getFruitQuantity() {
+	public Integer getFruit_quantity() {
 		return fruit_quantity;
 	}
 
@@ -74,7 +74,7 @@ public class Fruit {
 	/**
 	 * @param fruitQuantity the fruitQuantity to set
 	 */
-	public void setFruitQuantity(Integer fruitQuantity) {
+	public void setFruit_quantity(Integer fruitQuantity) {
 		this.fruit_quantity = fruitQuantity;
 	}
 
@@ -82,14 +82,14 @@ public class Fruit {
 	/**
 	 * @return the fruitPicture
 	 */
-	public String getFruitPicture() {
+	public String getFruit_picture() {
 		return fruit_picture;
 	}
 
 	/**
 	 * @param fruitPicture the fruitPicture to set
 	 */
-	public void setFruitPicture(String fruitPicture) {
+	public void setFruit_picture(String fruitPicture) {
 		this.fruit_picture = fruitPicture;
 	}
 

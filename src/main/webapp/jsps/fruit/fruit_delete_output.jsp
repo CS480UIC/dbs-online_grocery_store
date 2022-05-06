@@ -23,16 +23,16 @@
   <body>
   <h1>Delete Fruit</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/FruitServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="delete"/>
-		<input type="hidden" name="fruit_name" value="${fruit.fruit_name }"/>
-	Product ID    :<input type="text" name="productID" value="${fruit.productID }" disabled/>
+		<input type="hidden" name="product_id" value="${fruit.product_id}"/>
+	Product ID    :<input type="text" name="product_id" value="${fruit.product_id }" disabled/>
 	<br/>
 	Fruit Name：<input type="text" name="fruit_name" value="${fruit.fruit_name }" disabled />
 	<br/>
 	Fruit Price	：<input type="text" name="fruit_price" value="${fruit.fruit_price}" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${fruit.quantity}" disabled/>
+	Quantity	：<input type="text" name="fruit_quantity" value="${fruit.fruit_quantity}" disabled/>
 	<br/>
 	Fruit Picture	：<input type="text" name="fruit_picture" value="${fruit.fruit_picture}" disabled/>
 	<br/>

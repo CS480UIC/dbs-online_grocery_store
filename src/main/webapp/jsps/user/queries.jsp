@@ -22,10 +22,15 @@
   </head>
   
   <body>
-    <h1>Welcome to the Online Grocery Store</h1>
+    <h1>List of Queries</h1>
     <br>
-    <a href="<c:url value='/findAll'/>" target="body">Please list all the user in the table</a>&nbsp;&nbsp;
- 
+    <a href="<c:url value='/findAll'/>" target="body">list all the user in the table</a>&nbsp;&nbsp;
+ 	<br>
+    <a href="<c:url value='/findFruits'/>" target="body">list all the fruits in stock</a>&nbsp;&nbsp;  
+    <br>
+    <a href="<c:url value='/findFruitOrders'/>" target="body">list all the users that ordered fruits</a>&nbsp;&nbsp;
+    <br>
+    <a href="<c:url value='/findExpensiveFruits'/>" target="body">list all the fruits more expensive than average</a>&nbsp;&nbsp;
     
   </body>
 </html>

@@ -1,6 +1,8 @@
 package fruit.service;
 
 
+import java.util.List;
+
 import fruit.dao.FruitDao;
 import fruit.domain.Fruit;
 
@@ -25,5 +27,21 @@ public class FruitService {
 		if(entity1.getProduct_id()!=null && entity1.getProduct_id() == form.getProduct_id()) throw new FruitException("This fruit has been registered!");
 		fruitDao.add(form);
 	}
+	
+	public List<Object> findall() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return fruitDao.findFruits();
+		
+	}
+	
+	public List<Object> findallOrders() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return fruitDao.findFruitOrders();
+		
+	}
+
+	public List<Object> findExpensiveFruits()  throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		
+		return fruitDao.findExpensiveFruits();
+	}
+	
 	
 }

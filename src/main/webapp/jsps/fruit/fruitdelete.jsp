@@ -22,10 +22,10 @@
   
   <body>
   <h1>Delete Fruit</h1>
-<form action="<c:url value='/Entity1ServletDelete'/>" method="post">
+<form action="<c:url value='/FruitServletDelete'/>" method="post">
 	<input type="hidden" name="method" value="search"/>
-	Delete Fruit   :<input type="text" name="fruit_name" value="${form.fruit_name }"/>
-	<span style="color: red; font-weight: 900">${errors.fruit_name }</span>
+	Fruit Product ID   :<input type="text" name="product_id" value="${form.product_id }"/>
+	<span style="color: red; font-weight: 900">${errors.product_id }</span>
 	<br/>
 	<input type="submit" value="Delete Fruit"/>
 </form>

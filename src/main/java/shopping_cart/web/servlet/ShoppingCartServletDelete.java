@@ -6,8 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import fruit.dao.FruitDao;
-import fruit.domain.Fruit;
+import shopping_cart.dao.ShoppingCartDao;
+import shopping_cart.domain.ShoppingCart;
 
 
 /**
@@ -15,67 +15,63 @@ import fruit.domain.Fruit;
  */
 
 public class ShoppingCartServletDelete extends HttpServlet {
-//	private static final long serialVersionUID = 1L;
-//       
-//    /**
-//     * @see HttpServlet#HttpServlet()
-//     */
-//    public FruitServletDelete() {
-//        super();
-//    }
-//    
-//	/**
-//	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-//	 */
-//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		doPost(request,response);
-//	}
-//	
-//	/**
-//	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-//	 */
-//	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		String method = request.getParameter("method");
-//		FruitDao entity1Dao = new FruitDao();
-//		Fruit entity1 = null;
-//		if(method.equals("search"))
-//		{
-//			try {
-//				entity1 = entity1Dao.findByProductID(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//		
-//			if(entity1.getUsername()!=null){
-//						System.out.println(entity1);
-//						request.setAttribute("entity1", entity1);
-//						request.getRequestDispatcher("/jsps/entity1/entity1_delete_output.jsp").forward(request, response);			
-//				}
-//				else{
-//				request.setAttribute("msg", "Entity not found");
-//				request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//			}
-//		}
-//		else if(method.equals("delete"))
-//		{	
-//			try {
-//				entity1Dao.delete(request.getParameter("username"));
-//			} catch (ClassNotFoundException e1) {
-//				e1.printStackTrace();
-//			} catch (InstantiationException e1) {
-//				e1.printStackTrace();
-//			} catch (IllegalAccessException e1) {
-//				e1.printStackTrace();
-//			}
-//			request.setAttribute("msg", "Entity Deleted");
-//			request.getRequestDispatcher("/jsps/entity1/entity1_read_output.jsp").forward(request, response);
-//		}
-//	}
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ShoppingCartServletDelete() {
+        super();
+    }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request,response);
+	}
+	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String method = request.getParameter("method");
+		ShoppingCartDao shoppingCartDao = new ShoppingCartDao();
+		ShoppingCart shoppingCart = null;
+		if(method.equals("search"))
+		{
+			try {
+				shoppingCart = shoppingCartDao.findByUsername(request.getParameter("username"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+			e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+		}
+	
+			if(shoppingCart.getUsername()!=null){
+						//System.out.println(shoppingCart);
+						request.setAttribute("shopping_cart", shoppingCart);
+						request.getRequestDispatcher("/jsps/shopping_cart/shopping_cart_delete_output.jsp").forward(request, response);			
+				}
+				else{
+				request.setAttribute("msg", "Shopping Cart not found");
+				request.getRequestDispatcher("/jsps/shopping_cart/shopping_cart_read_output.jsp").forward(request, response);			}
+		}
+		else if(method.equals("delete"))
+		{	
+			try {
+				shoppingCartDao.delete(request.getParameter("username"));
+			} catch (ClassNotFoundException e1) {
+				e1.printStackTrace();
+			} catch (InstantiationException e1) {
+				e1.printStackTrace();
+			} catch (IllegalAccessException e1) {
+				e1.printStackTrace();
+			}
+			request.setAttribute("msg", "Shopping Cart Deleted");
+			request.getRequestDispatcher("/jsps/shopping_cart/shopping_cart_read_output.jsp").forward(request, response);
+		}
+	}
 }
-
-
-

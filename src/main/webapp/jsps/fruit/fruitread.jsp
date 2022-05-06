@@ -23,10 +23,10 @@
   <body>
   <h1>Read Fruit</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
-<form action="<c:url value='/Entity1ServletRead'/>" method="post">
+<form action="<c:url value='/FruitServletRead'/>" method="post">
 	<input type="hidden" name="method" value="regist"/>
-	Fruit Name    :<input type="text" name="fruit_name" value="${form.fruit_name }"/>
-	<span style="color: red; font-weight: 900">${errors.fruit_name}</span>
+	Product ID :<input type="text" name="product_id" value="${form.product_id }"/>
+	<span style="color: red; font-weight: 900">${errors.product_id}</span>
 	<br/>
 <%-- 	Password：<input type="password" name="password" value="${form.password }"/>
 	<span style="color: red; font-weight: 900">${errors.password }</span>

@@ -24,19 +24,19 @@
   <h1>Update Shopping Cart</h1>
 <p style="color: red; font-weight: 900">${msg }</p>
 <form>
-	Product ID    :<input type="text" name="productID" value="${form.productID }" disabled/>
+	Product ID    :<input type="text" name="product_id" value="${shopping_cart.product_id }" disabled/>
 	<br/>
-	Product Price	：<input type="text" name="product_price" value="${form.product_price}" disabled/>
+	Product Price	：<input type="text" name="product_price" value="${shopping_cart.product_price}" disabled/>
 	<br/>
-	Quantity	：<input type="text" name="quantity" value="${form.quantity}" disabled/>
+	Quantity	：<input type="text" name="quantity" value="${shopping_cart.quantity}" disabled/>
 	<br/>
-	Username	：<input type="text" name="username" value="${form.username}" disabled/>
+	Username	：<input type="text" name="username" value="${shopping_cart.username}" disabled/>
 	<br/>
 </form>
 <h1>Update the values below</h1>
 <form action="<c:url value='/ShoppingCartServletUpdate'/>" method="post">
 		<input type="hidden" name="method" value="update"/>
-	Product ID    :<input type="text" name="productID" value="${form.productID }"/>
+	Product ID    :<input type="text" name="product_id" value="${form.product_id }"/>
 	<span style="color: red; font-weight: 900">${errors.productID }</span>
 	<br/>
 	Product Price	：<input type="text" name="product_price" value="${form.product_price}"/>

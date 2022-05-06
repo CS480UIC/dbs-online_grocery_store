@@ -5,9 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-
-
+import java.util.ArrayList;
 
 //import java.util.ArrayList;
 //import java.util.List;
@@ -36,6 +34,7 @@ public class ShoppingCartDao {
 
 	public ShoppingCart findByUsername(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		ShoppingCart shoppingcart = new ShoppingCart();
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
@@ -46,17 +45,20 @@ public class ShoppingCartDao {
 
 		    while(resultSet.next()){
 		    	String user = resultSet.getString("username");
-		    	if(user == username){
+		    	
+		    	if(user.equals(username)){
 		    		shoppingcart.setUsername(user);
 		    		shoppingcart.setProduct_price(Double.parseDouble(resultSet.getString("product_price")));
 		    		shoppingcart.setProduct_id(Integer.parseInt(resultSet.getString("product_id")));
 		    		shoppingcart.setQuantity(Integer.parseInt(resultSet.getString("quantity")));
+		    
 		    	}
 		    }
 		    connect.close();
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+
 		return shoppingcart;
 	}	
 	
@@ -94,22 +96,24 @@ public class ShoppingCartDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-//	public void update(Fruit form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
-//			
-//			String sql = "UPDATE entity1 SET password = ?, email = ? where username = ?;";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,form.getPassword());
-//			preparestatement.setString(2,form.getEmail());
-//		    preparestatement.setString(3,form.getUsername());
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
+	public void update(ShoppingCart form) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			
+			String sql = "UPDATE shopping_cart SET product_id = ?, product_price = ?, quantity = ? where username =?  ;";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    
+			preparestatement.setInt(1,form.getProduct_id());
+		    preparestatement.setDouble(2,form.getProduct_price());
+		    preparestatement.setInt(3,form.getQuantity());
+		    preparestatement.setString(4,form.getUsername());
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 	
 	
 	/**
@@ -118,18 +122,18 @@ public class ShoppingCartDao {
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
 	 */
-//	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-//		try {
-//			Class.forName("com.mysql.cj.jdbc.Driver");
-//			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
-//			
-//			String sql = "delete from entity1 where username = ?";
-//			PreparedStatement preparestatement = connect.prepareStatement(sql); 
-//		    preparestatement.setString(1,username);
-//		    preparestatement.executeUpdate();
-//		    connect.close();
-//		} catch(SQLException e) {
-//			throw new RuntimeException(e);
-//		}
-//	}
+	public void delete(String username) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			
+			String sql = "delete from shopping_cart where username = ?";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+		    preparestatement.setString(1,username);
+		    preparestatement.executeUpdate();
+		    connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+	}
 }

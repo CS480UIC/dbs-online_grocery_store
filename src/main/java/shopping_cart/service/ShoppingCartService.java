@@ -22,7 +22,10 @@ public class ShoppingCartService {
 	public void create(ShoppingCart form) throws ShoppingCartException, ClassNotFoundException, InstantiationException, IllegalAccessException{
 		// check the primary key of Entity1
 		ShoppingCart entity1 = shoppingCartDao.findByUsername(form.getUsername());
-		if(entity1.getUsername()!=null && entity1.getUsername().equals(form.getUsername())) throw new ShoppingCartException("This shopping cart has been registered!");
+		if(entity1.getUsername()!=null && entity1.getUsername().equals(form.getUsername()) && entity1.getProduct_id() == form.getProduct_id()) {
+			System.out.println("duplicate");
+			throw new ShoppingCartException("This shopping cart has been registered!");
+		}
 		shoppingCartDao.add(form);
 	}
 	
