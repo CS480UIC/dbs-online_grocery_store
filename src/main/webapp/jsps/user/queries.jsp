@@ -29,6 +29,10 @@
     <a href="<c:url value='/MostRecentHistory'/>" target="body">Please list all the most recent orders</a>&nbsp;&nbsp;
     <br>
     <a href="<c:url value='/customerAndDriver'/>" target="body">Please list all the Customer Person Relationships</a>&nbsp;&nbsp;
+    <br>
+    <a href="<c:url value='/ExpensiveMeat'/>" target="body">Please list all the expensive meats</a>&nbsp;&nbsp;
+    <br>
+    <a href="<c:url value='/FindAllVegetable'/>" target="body">Please list all the vegetables</a>&nbsp;&nbsp;
     
   </body>
 </html>

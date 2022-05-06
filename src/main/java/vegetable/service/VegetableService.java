@@ -1,6 +1,8 @@
 package vegetable.service;
 
 
+import java.util.List;
+
 import vegetable.dao.VegetableDao;
 import vegetable.domain.Vegetable;
 
@@ -25,5 +27,11 @@ public class VegetableService {
 		if(entity1.getProduct_id()!=null && entity1.getProduct_id() == form.getProduct_id()) throw new VegetableException("This veg has been registered!");
 		vegetableDao.add(form);
 	}
+	
+	public List<Object> findAllVegetable() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return vegetableDao.findAllVegetable();
+		
+	}
+
 	
 }

@@ -5,9 +5,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
-
-
+import user.domain.User;
 
 //import java.util.ArrayList;
 //import java.util.List;
@@ -134,6 +135,31 @@ public class VegetableDao {
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}
+	}
+	
+	public List<Object> findAllVegetable() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		List<Object> list = new ArrayList<>();
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection connect = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/online_grocery_store", MySQL_user, MySQL_password);
+			String sql = "SELECT veg_name, veg_price from vegetable where EXISTS (SELECT * from vegetable);";
+			PreparedStatement preparestatement = connect.prepareStatement(sql); 
+			ResultSet resultSet = preparestatement.executeQuery();			
+			while(resultSet.next()){
+				Vegetable veg = new Vegetable();    
+				//veg.setProduct_id(resultSet.getInt("product_id"));
+	    		veg.setVegName(resultSet.getString("veg_name"));
+	    		veg.setVegPrice(resultSet.getDouble("veg_price"));
+	    		//veg.setVegQuantity(resultSet.getInt("veg_quantity"));
+	    		//veg.setVegPicture(resultSet.getString("veg_picture"));
+	    		list.add(veg);
+			 }
+			connect.close();
+		} catch(SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return list;
+		
 	}
 
 }

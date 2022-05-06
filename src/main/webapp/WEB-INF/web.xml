@@ -143,6 +143,17 @@
 		<url-pattern>/MeatServletCreate</url-pattern>
 	</servlet-mapping>
 
+<servlet>
+		<description></description>
+		<display-name>ExpensiveMeat</display-name>
+		<servlet-name>ExpensiveMeat</servlet-name>
+		<servlet-class>meat.web.servlet.ExpensiveMeat</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExpensiveMeat</servlet-name>
+		<url-pattern>/ExpensiveMeat</url-pattern>
+	</servlet-mapping>
+
 	<servlet>
 		<description></description>
 		<display-name>MeatServletRead</display-name>
@@ -186,6 +197,18 @@
 	<servlet-mapping>
 		<servlet-name>VegetableServletCreate</servlet-name>
 		<url-pattern>/VegetableServletCreate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>FindAllVegetable</display-name>
+		<servlet-name>FindAllVegetable</servlet-name>
+		<servlet-class>vegetable.web.servlet.FindAllVegetable
+		</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindAllVegetable</servlet-name>
+		<url-pattern>/FindAllVegetable</url-pattern>
 	</servlet-mapping>
 
 	<servlet>

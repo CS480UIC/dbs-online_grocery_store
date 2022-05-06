@@ -1,6 +1,8 @@
 package meat.service;
 
 
+import java.util.List;
+
 import meat.dao.MeatDao;
 import meat.domain.Meat;
 
@@ -26,4 +28,7 @@ public class MeatService {
 		meatDao.add(form);
 	}
 	
+	public List<Object> findExpensiveMeat() throws InstantiationException, IllegalAccessException, ClassNotFoundException{
+		return meatDao.findExpensiveMeat();
+	}
 }
